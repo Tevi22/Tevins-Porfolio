@@ -1,0 +1,91 @@
+#home {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-social {
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+/*Child elements .home-social*/
+
+.icon {
+    background: var(--color-primary);
+    color: inherit;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    width: fit-content;
+    margin: 10px;
+}
+
+.icon:hover {
+    color: var(--color-white);
+    border: 1px solid #000;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.home-data {
+    padding: 10px;
+}
+
+#home-title {
+    color: var(--color-primary);
+}
+
+#home-description {
+    text-wrap: wrap;
+}
+
+
+.typewriter-text {
+    overflow: hidden;
+    /* Ensures the text is clipped */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    /* animation: typewriter 3s steps(40) 1s 1 normal both;
+    /* Adjust duration, steps, and delay as needed */
+    width: 50%;
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: inherit;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: initial;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .home-social {
+        margin-top: 50px;
+    }
+
+    main {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .home-data {
+        margin-top: 0px;
+    }
+
+}

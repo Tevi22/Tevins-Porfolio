@@ -1,0 +1,80 @@
+#projects {
+    text-align: center;
+}
+
+
+h2 {
+    color: var(--color-primary);
+}
+
+.project-header {
+    margin-top: 10px;
+    color: var(--color-primary);
+}
+
+/* Carousel */
+
+ngb-carousel {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: 1px solid var(--color-primary);
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+ng-template:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(183, 107, 245)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(183, 107, 245)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.project-details {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    margin: .5rem;
+}
+
+.project-tags {
+    display: inline-block;
+}
+
+.tag {
+    margin-right: 5px;
+}
+.btn {
+    background-color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    transition: var(--transition);
+    font-weight: bold;
+}
+
+/* Small Devices */
+
+@media (max-width: 768px) {
+    
+}

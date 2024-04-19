@@ -1,0 +1,24 @@
+<section id="projects">
+	<br>
+	<h5>My Recent Work</h5>
+	<h2>Projects</h2>
+	<br>
+	<ngb-carousel data-aos="zoomin" data-aos-delay="500" data-aos-duration="800">
+		<!--Sample slide info until i incorporate my personal projects-->
+		<ng-template class="project-slides" ngbSlide *ngFor="let project of projects">
+			<div class="template">
+				<div class="picsum-img-wrapper">
+					<img class="img-fluid" [src]="project.imageUrl" [alt]="project.title" />
+				</div>
+				<div class="project-details">
+					<h3 id="responsive-text" class="project-header">{{ project.title }}</h3>
+					<div class="project-nav">
+						<a id="responsive-text-important" target="_blank" [href]="project.githubUrl" class="btn">Github <i class="bi bi-arrow-right"></i></a>
+					</div>
+					<p id="responsive-text" class="project-tag"><span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span></p>
+				</div>
+			</div>
+			<br>
+		</ng-template>
+	</ngb-carousel>
+</section>

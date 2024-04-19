@@ -1,0 +1,121 @@
+/* General Styles */
+#experience {
+    margin-top: auto;
+    text-align: center;
+}
+
+.heading {
+    color: var(--color-primary);
+    font-size: 2em;
+}
+
+.subheading {
+    color: var(--color-primary);
+    font-size: 1.5em;
+}
+
+/* Timeline Section */
+.timeline-section {
+    position: relative;
+    padding: 40px 0;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Vertical Line */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: var(--color-primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Columns */
+.timeline-column {
+    width: 48%;
+    /* Adjust the width as needed */
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    background-color: inherit;
+    padding: 10px 30px;
+}
+
+/* Card Styles */
+.card {
+    background-color: transparent;
+    color: inherit;
+    animation: fadeIn 2s ease forwards;
+    border: .1rem solid var(--color-primary);
+    border-radius: 5%;
+}
+
+/* Card Children */
+.responsive-text-important {
+    color: var(--color-primary);
+}
+
+/*education side */
+.timeline-column.right > .timeline-item {
+    margin-top: 90px;
+}
+
+/*work side */
+.timeline-column.left > .timeline-item {
+    margin-top: 50px;
+}
+
+/* Flags for the left column */
+.timeline-column.left .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-primary);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    transform: translateY(-50%);
+}
+
+/* Flags for the right column */
+.timeline-column.right .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 95%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-primary);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .timeline-column.left .timeline-item::before {
+        left: 86%;
+    }
+
+    .timeline-column.right .timeline-item::before {
+        right: 86%;
+    }
+
+    .responsive-text,
+    .responsive-text-important {
+        font-size: 16px;
+    }
+}

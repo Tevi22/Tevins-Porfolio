@@ -1,0 +1,86 @@
+* {
+    color: var(--color-white);
+}
+
+
+
+header {
+    display: flex;
+
+}
+
+.navbar {
+    padding: 0 5px 0 5px;
+    background: var(--color-primary-linear);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 50%;
+    /* Each item takes up half of the available space */
+    padding: 10px;
+    /* Adjust padding as needed */
+}
+
+.nav-item {
+    flex-grow: 1;
+    /* Allow items to grow to fill available space */
+    max-width: 50%;
+    /* Ensure each item takes up at most half of the row */
+}
+
+
+
+.nav-item {
+    margin-left: 10px;
+}
+
+i {
+    color: var(--color-bg);
+    padding-right: 5px;
+}
+
+.nav-item:hover {
+    color: var(--color-white);
+}
+
+.navbar-close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* Animation */
+
+@media screen and (min-width: 970px) {
+
+    .navbar-close-btn {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
