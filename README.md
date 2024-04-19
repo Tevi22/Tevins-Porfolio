@@ -30,7 +30,7 @@ ng serve
 Open your browser and navigate to http://localhost:4200/ to view the project.
 
 Folder Structure
-portfolio/
+Tevins-Portfolio/
 ├── sever/
 ├── src/
 │   ├── app/
