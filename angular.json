@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Portfolio:build:production"
+              "buildTarget": "Tevins-Portfolio:build:production"
             },
             "development": {
-              "buildTarget": "Portfolio:build:development"
+              "buildTarget": "Tevins-Portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Portfolio:build"
+            "buildTarget": "Tevins-Portfolio:build"
           }
         },
         "test": {
