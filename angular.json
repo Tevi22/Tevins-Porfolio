@@ -26,7 +26,6 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "./favicon.ico",
               "./src/assets"
             ],
             "styles": [
@@ -98,7 +97,6 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "./favicon.ico",
               "./src/assets"
             ],
             "styles": [
