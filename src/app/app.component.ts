@@ -1,5 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-import AOS from 'aos'
 import { HeaderComponent } from '../components/header/header.component';
 import { HomeComponent } from '../components/home/home.component';
 import { AboutComponent } from '../components/about/about.component';
@@ -10,6 +9,8 @@ import { ContactComponent } from '../components/contact/contact.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { ThemeService } from './services/theme.service';
 import { Subscription } from 'rxjs';
+
+declare var AOS: any;
 
 @Component({
   selector: 'app-root',
