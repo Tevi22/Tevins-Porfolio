@@ -6,8 +6,8 @@ import { EmailService } from '../../app/services/email.service';
   selector: 'app-contact',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  templateUrl: 'contact.component.html',
+  styleUrls: ['contact.component.css']
 })
 export class ContactComponent {
   constructor(private emailService: EmailService) { }

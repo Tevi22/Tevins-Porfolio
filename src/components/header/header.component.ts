@@ -12,8 +12,8 @@ declare function toggleTheme(): void; // Declare the toggleTheme function
     CommonModule,
 
   ],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
+  templateUrl: 'header.component.html',
+  styleUrls: ['header.component.css'],
 })
 
 export class HeaderComponent {

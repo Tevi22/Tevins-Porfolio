@@ -8,8 +8,8 @@ import { NgFor } from '@angular/common';
   imports: [
     NgFor
   ],
-  templateUrl: './work-experiance.component.html',
-  styleUrls: ['./work-experiance.component.css']
+  templateUrl: 'work-experiance.component.html',
+  styleUrls: ['work-experiance.component.css']
 })
 export class WorkExperianceComponent {
   workExperience = [
