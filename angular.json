@@ -19,7 +19,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs",
-            "baseHref": "https://tevi22.github.io/Tevins-Porfolio/",
+            "baseHref": "/Tevins-Porfolio/",
             "index": "./index.html",
             "browser": "./main.ts",
             "polyfills": [
