@@ -1,13 +1,13 @@
 import { Component, OnInit} from '@angular/core';
-import { HeaderComponent } from '../components/header/header.component';
-import { HomeComponent } from '../components/home/home.component';
-import { AboutComponent } from '../components/about/about.component';
-import { WorkExperianceComponent } from '../components/work-experiance/work-experiance.component';
-import { SkillsComponent } from '../components/skills/skills.component';
-import { ProjectsComponent } from '../components/projects/projects.component';
-import { ContactComponent } from '../components/contact/contact.component';
-import { FooterComponent } from '../components/footer/footer.component';
-import { ThemeService } from './services/theme.service';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { WorkExperianceComponent } from './components/work-experiance/work-experiance.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ThemeService } from '../services/theme.service';
 import { Subscription } from 'rxjs';
 
 declare var AOS: any;
