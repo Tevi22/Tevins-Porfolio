@@ -21,7 +21,7 @@ export class WorkExperianceComponent {
     {
       role: 'Tech Support Intern',
       company: 'Infosys',
-      date: ' July, 20222 - September, 2023'
+      date: ' July, 2022 - September, 2023'
     },
     {
       role: 'General Manager',
