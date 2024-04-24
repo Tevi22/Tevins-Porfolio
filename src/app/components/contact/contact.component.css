@@ -60,7 +60,7 @@ textarea {
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
-    color: var(--color-white);
+    color: inherit;
 }
 
 input:focus,
