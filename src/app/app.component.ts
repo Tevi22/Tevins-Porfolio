@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { WorkExperianceComponent } from './components/work-experiance/work-experiance.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ThemeService } from '../services/theme.service';
@@ -22,6 +23,7 @@ declare var AOS: any;
     WorkExperianceComponent,
     SkillsComponent,
     ProjectsComponent,
+    TestimonialComponent,
     ContactComponent,
     FooterComponent,
   ],
