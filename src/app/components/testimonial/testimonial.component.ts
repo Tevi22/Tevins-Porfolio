@@ -21,7 +21,7 @@ export class TestimonialComponent {
 
   testimonials = [
     {
-      imageUrl: '../../../assets/Images/test1.jpg',
+      imageUrl: './assets/Images/test1.jpg',
       title: 'Sarah Johnson',
       text: '"Working with Tevin was an absolute pleasure! His attention to detail and commitment to excellence are truly remarkable. He consistently delivered high-quality work, and his expertise in web development played a significant role in the success of our project. I highly recommend Tevin to anyone seeking a dedicated and talented developer."',
       author: 'Sarah Johnson',
