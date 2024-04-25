@@ -29,10 +29,10 @@ export class TestimonialComponent {
     },
     {
       imageUrl: './assets/Images/test2.jpg',
-      title: 'Michael Smith',
-      text: '"Tevin is an exceptional developer with a keen eye for design and a deep understanding of programming concepts. His ability to grasp complex requirements and translate them into elegant solutions is impressive. I was thoroughly impressed by his professionalism, communication skills, and commitment to delivering results on time. It was a pleasure collaborating with Tevin, and I look forward to working with him again in the future." ',
-      author: 'Michael Smith',
-      jobTitle: 'Lead Designer'
+      title: 'Shrikant Kulkarni',
+      text: '"I highly recommend Tevin for his outstanding performance in the ServiceNow bootcamp for New Apprenticeship. His mastery of client scripts, business rules, script includes, JavaScript, and Angular was evident in the assignments and projects he worked on. Tevin`s creativity shone through in crafting a remarkable movie rating app using ServiceNow Studio. Tevin is very sincere and hardworking. A dedicated and skilled professional, Tevin would be a valuable asset to any team in the field of ServiceNow development and front-end technologies." ',
+      author: 'Shrikant Kulkarni',
+      jobTitle: 'ServiceNow Trainer'
     },
     {
       imageUrl: './assets/Images/test3.jpg',
