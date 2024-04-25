@@ -41,10 +41,6 @@ a:hover {
     text-align: center;
 }
 
-.contact-card:hover {
-    animation: blink 2s infinite;
-}
-
 form {
     display: flex;
     flex-direction: column;

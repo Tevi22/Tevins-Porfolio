@@ -23,8 +23,10 @@ export class ContactComponent {
     if (this.myGroup.valid) {
       this.emailService.sendEmail(this.myGroup.value).subscribe(response => {
         console.log('Email sent successfully', response);
+        alert('Email sent successfully')
       }, error => {
         console.error('Error sending email', error);
+        alert('Error sending email')
       });
     }
   }
