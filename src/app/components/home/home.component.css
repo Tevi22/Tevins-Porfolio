@@ -11,6 +11,10 @@
     margin-top: 100px;
 }
 
+.home-data {
+    margin-top: 16px;
+}
+
 /*Child elements .home-social*/
 
 .icon {
@@ -81,10 +85,6 @@ main {
     main {
         flex-direction: column;
         width: fit-content;
-    }
-
-    .home-data {
-        margin-top: 0px;
     }
 
 }
