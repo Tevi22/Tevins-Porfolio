@@ -72,7 +72,8 @@ a{
 
 .footer_copyright {
     color: var(--color-white);
-    margin-top: 10px;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
