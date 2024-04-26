@@ -78,6 +78,11 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    #home {
+        margin-top: 50px;
+        
+    }
+
     .home-social {
         margin-top: 50px;
     }
