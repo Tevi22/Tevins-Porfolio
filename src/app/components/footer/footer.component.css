@@ -28,8 +28,8 @@ li {
     margin: 10px;
 }
 
-li:hover {
-    background-color: #000;
+li a:hover {
+    color: #000;
 }
 
 .container {
