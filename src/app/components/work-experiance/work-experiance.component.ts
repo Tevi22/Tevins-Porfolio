@@ -34,6 +34,7 @@ export class WorkExperianceComponent {
     {
       schoolName: 'SNHU',
       degree: 'Information Technology',
+      year: 'Junior: GPA: 4.0 ',
       date: 'October, 2023 - Present'
     },
     {
