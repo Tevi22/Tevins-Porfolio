@@ -32,11 +32,12 @@ function loadTheme() {
         if (savedTheme) {
             // If a theme was found, add its class to the document body
             document.body.classList.add(savedTheme);
+            console.log('Theme loaded from local storage');
         } else {
             // If no theme was found, default to the light theme
             document.body.classList.add('light-theme');
+            console.log('No theme found in local storage. Defaulting to light theme');
         }
-        console.log('Theme loaded from local storage');
     } catch (error) {
         // If an error occurs during the theme loading process, log it to the console
         console.error('An error occurred while loading theme from local storage:', error.message);
