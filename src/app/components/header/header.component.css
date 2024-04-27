@@ -2,17 +2,11 @@
     color: var(--color-white);
 }
 
-
-
-header {
-    display: flex;
-
-}
-
 .navbar {
     padding: 0 5px 0 5px;
     background: var(--color-primary-linear);
     width: 100%;
+    height: fit-content;
     position: fixed;
     z-index: 2;
 }
@@ -33,6 +27,10 @@ header {
     /* Each item takes up half of the available space */
     padding: 10px;
     /* Adjust padding as needed */
+}
+
+button {
+    color: inherit;
 }
 
 .nav-item {
@@ -81,9 +79,16 @@ i {
     
 }
 
+/* Fix Landscape view */
+@media screen and (orientation: landscape) {
+    .navbar {
+        top: 0;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .navbar {
-        position: fixed;
         bottom: 0;
         width: 100%;
     }
