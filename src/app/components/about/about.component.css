@@ -1,4 +1,4 @@
-section {
+#about {
     text-align: center;
     align-items: center;
 }
@@ -78,8 +78,6 @@ h2 {
     font-weight: bold;
 }
 
-/* Large Screen */
-
 
 .container {
     display: flex;
@@ -87,6 +85,7 @@ h2 {
     justify-content: center;
 }
 
+/* Large Screen */
 
 @media screen and (max-width: 1280px) {
     .img-container {
@@ -102,7 +101,7 @@ h2 {
         margin-bottom: 0; /* Remove margin-bottom */
     }
 
-    #about .about-me {
+    #about-container .about-me {
         text-wrap: wrap;
         width: fit-content;
         margin-top: 0; /* Remove margin-top */
@@ -137,5 +136,19 @@ h2 {
 
     .content small {
         font-size: 0.8rem; /* Adjust the font size as needed */
+    }
+}
+
+/* Landscape view */
+@media screen and (orientation: landscape) {
+    .img-container {
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 10px; /* Add padding to control the gap */
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
     }
 }
