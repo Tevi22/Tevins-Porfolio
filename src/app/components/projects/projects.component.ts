@@ -25,6 +25,12 @@ export class ProjectsComponent {
       tags: ['#Python']
     },
     {
+      title: 'Weather App',
+      imageUrl: './assets/Images/weather-app.png',
+      githubUrl: 'https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app',
+      tags: ['#Angular', '#Api', '#SinglePageApp']
+    },
+    {
       title: 'Mobile Auto Mechanic Website',
       imageUrl: './assets/Images/Auto-Mechanic-Website.png',
       githubUrl: 'https://github.com/Tevi22/JavaScript_Workspace/tree/main/Capstone%20Project/automobmechanic-app',
