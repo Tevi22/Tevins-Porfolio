@@ -18,17 +18,18 @@
     font-family: "Roboto", sans-seri;
 }
 
+
 /* Themes */
 
 .dark-theme {
     --text-color: var(--color-white);
     --background-color: var(--color-bg);
 }
+
 .light-theme {
     --text-color: #000;
     --background-color: var(--color-white);
 }
-
 
 body {
     color: var(--text-color);
@@ -42,30 +43,33 @@ body {
     color: var(--color-white);
 }
 
-h2 {
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
+#section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin: 30px 0 60px;
 }
 
 h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: var(--color-primary);
-	left: 0;
-	right: 0;
-	bottom: -10px;
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: var(--color-primary);
+    left: 0;
+    right: 0;
+    bottom: -10px;
 }
+
 
 /* Custom AOS Animations */
 
+
 /* Typewriter Effect */
+
 [data-aos="typewriter"] {
     opacity: 0;
 }
@@ -79,11 +83,11 @@ h2::after {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
 }
+
 
 /* FadeIn Effect */
 
@@ -95,6 +99,7 @@ h2::after {
     opacity: 1;
     animation: fadeInAnimation 2s ease-in;
 }
+
 
 /* bounceSlideInFromLeft Effect */
 
@@ -112,28 +117,24 @@ h2::after {
         transform: translateX(-100%) translateY(0);
         opacity: 0;
     }
-
     20% {
         transform: translateX(-70%) translateY(-30px);
     }
-
     40% {
         transform: translateX(-50%) translateY(0);
         opacity: 1;
     }
-
     60% {
         transform: translateX(-30%) translateY(-15px);
     }
-
     80% {
         transform: translateX(-10%) translateY(0);
     }
-
     100% {
         transform: translateX(0) translateY(0);
     }
 }
+
 
 /* fadeInSlideFromBottomAnimation Effect */
 
@@ -151,14 +152,15 @@ h2::after {
         opacity: 0;
         transform: translateY(100px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+
 /* slideInFromRight Effect */
+
 [data-aos="slideInFromRight"] {
     opacity: 0;
 }
@@ -166,7 +168,6 @@ h2::after {
 [data-aos="slideInFromRight"].aos-animate {
     opacity: 1;
     animation: slideInFromRight 1s ease forwards;
-
 }
 
 @keyframes slideInFromRight {
@@ -174,12 +175,12 @@ h2::after {
         transform: translateX(100%);
         opacity: 0;
     }
-
     100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 
 /* slideInFromLeft Effect  */
 
@@ -190,7 +191,6 @@ h2::after {
 [data-aos="slideInFromLeft"].aos-animate {
     opacity: 1;
     animation: slideInFromLeft 1s ease forwards;
-
 }
 
 @keyframes slideInFromLeft {
@@ -198,12 +198,12 @@ h2::after {
         transform: translateX(-100%);
         opacity: 0;
     }
-
     100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
+
 
 /* Button Blink Effect */
 
@@ -214,23 +214,21 @@ h2::after {
 [data-aos="blink"].aos-animate {
     opacity: 1;
     animation: blink 1s infinite;
-
 }
 
 @keyframes blink {
     0% {
         border-color: rgb(119, 81, 204);
     }
-
     50% {
         border-color: var(--color-primary);
         /* Change to your desired border color */
     }
-
     100% {
         border-color: rgb(119, 81, 204);
     }
 }
+
 
 /* Zoomin Effect */
 
@@ -241,7 +239,6 @@ h2::after {
 [data-aos="zoomin"].aos-animate {
     opacity: 1;
     animation: zoomIn 0.5s ease-in;
-
 }
 
 @keyframes zoomIn {
@@ -251,7 +248,6 @@ h2::after {
         opacity: 0;
         /* Start from fully transparent */
     }
-
     to {
         transform: scale(1);
         /* End with full scale (normal size) */
@@ -259,5 +255,13 @@ h2::after {
         /* End with full opacity (fully visible) */
     }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto-serif, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto-serif, "Helvetica Neue", sans-serif;
+}

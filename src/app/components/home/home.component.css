@@ -1,95 +1,122 @@
-#home {
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+/* Base Layout */
+
+.hero {
+    margin-top: 5rem;
+    padding: 6rem 2rem;
+    background: #faf9f7;
 }
 
-.home-social {
-    display:flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-.home-data {
-    margin-top: 16px;
-}
-
-/*Child elements .home-social*/
-
-.icon {
-    background: var(--color-primary);
-    color: inherit;
-    padding: 1rem;
-    border-radius: 0.7rem;
-    border: 1px solid transparent;
-    width: fit-content;
-    margin: 10px;
-}
-
-.icon:hover {
-    color: var(--color-white);
-    border: 1px solid #000;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 4rem;
 }
 
 
+/* Typography */
 
-#home-title {
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
     color: var(--color-primary);
 }
 
-#home-description {
-    text-wrap: wrap;
-    padding: 5px;
+.hero .name {
+    font-weight: 800;
+}
+
+.subtitle {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #5f6b73;
+    font-weight: bold;
+    max-width: 480px;
 }
 
 
-.typewriter-text {
-    overflow: hidden;
-    /* Ensures the text is clipped */
-    white-space: nowrap;
-    /* Prevents text from wrapping */
-    /* animation: typewriter 3s steps(40) 1s 1 normal both;
-    /* Adjust duration, steps, and delay as needed */
-    width: 50%;
+/* Home Button */
+
+.hero-actions {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .btn {
-    width: max-content;
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: inherit;
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
+    padding: 0.9rem 1.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
 }
 
-.btn:hover {
-    color: initial;
-    font-weight: bold;
+.btn.primary {
+    background: var(--color-primary-linear);
+    color: white;
 }
 
-@media screen and (max-width: 768px) {
-    #home {
-        margin-top: 50px;
-        
-    }
+.btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(138, 78, 202, 0.35);
+}
 
-    .home-social {
-        margin-top: 50px;
-    }
+.btn.secondary {
+    background: white;
+    border: 2px solid rgba(138, 78, 202, 0.45);
+    color: #1e2a32;
+}
 
-    main {
-        flex-direction: column;
-        width: fit-content;
-    }
+.btn.secondary:hover {
+    transform: translateY(-2px);
+    background: rgba(138, 78, 202, 0.06);
+    box-shadow: 0 10px 24px rgba(138, 78, 202, 0.18);
+}
 
+
+/* Gradient Blob */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-blob {
+    width: 450px;
+    height: 450px;
+    border-radius: 50% 40% 60% 45%;
+    background: linear-gradient(135deg, #7f7cff, #ff7ab6, #ffd36a, #6fd1ff);
+    filter: blur(0px);
+}
+
+
+/* image inside the blob */
+
+.gradient-blob img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50% 40% 60% 45%;
+}
+
+
+/* Responsive Design Mobile */
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .gradient-blob {
+        width: 260px;
+        height: 260px;
+        margin-top: 3rem;
+    }
 }
