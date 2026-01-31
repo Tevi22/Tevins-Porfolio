@@ -1,27 +1,37 @@
-<section id="contact">
-    <br>
-    <h5>Get In Touch</h5>
-    <h2>Contact Me</h2>
-</section>
-<section id="contact-methods">
-    <div class="card-container">
-        <div class="contact-card" data-aos="slideInFromLeft">
-            <i class="bi bi-envelope"></i>
-            <h4>Email</h4>
-            <h5>tevindavis&#64;icloud.com</h5>
-            <a href="mailto:tevindavis@icloud.com" target="rel='noreferrer'_blank">Send a Message</a>
+<section class="contact" id="contact">
+    <h2 class="contact-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT -->
+        <div class="contact-message">
+            <p>
+                Let’s build something<br /> great together.
+            </p>
         </div>
-        <div class="contact-card" data-aos="slideInFromRight">
-            <i class="bi bi-linkedin"></i>
-            <h4>Linkedin</h4>
-            <a href="https://www.linkedin.com/in/tevindavis/" target="rel='noreferrer'_blank">&#64;tevindavis</a>
+
+        <!-- DIVIDER -->
+        <div class="contact-divider"></div>
+
+        <!-- RIGHT -->
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <h4>Email</h4>
+                <p>tevindavis&#64;icloud.com</p>
+                <a href="mailto:tevindavis@icloud.com" class="contact-btn">
+          Send Message
+        </a>
+            </div>
+
+            <div class="contact-item">
+                <h4>LinkedIn</h4>
+                <p>&#64;tevindavis</p>
+                <a href="https://www.linkedin.com/in/tevindavis/" target="_blank" class="contact-btn">
+          Connect
+        </a>
+            </div>
+
         </div>
     </div>
-    <form [formGroup]='myGroup' (ngSubmit)="onSubmit()" data-aos="slideInFromRight">
-        <input id="name" placeholder="Your Full Name" type="text" formControlName="name">
-        <input id="email" placeholder="Your Email" text="text" formControlName="email">
-        <input id="subject" placeholder="Subject" text="text" formControlName="subject">
-        <textarea id="message" row="14" placeholder="Your Message" text="text" formControlName="message"></textarea>
-        <button type="submit" class="btn btn-primary" [disabled]="myGroup.invalid">Send Message</button>
-    </form>
 </section>
