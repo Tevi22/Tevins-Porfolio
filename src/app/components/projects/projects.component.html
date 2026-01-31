@@ -1,23 +1,78 @@
-<section id="projects">
-	<br>
-	<h5>My Recent Work</h5>
-	<h2>Projects</h2>
-	<ngb-carousel data-aos="zoomin" data-aos-delay="500" data-aos-duration="800">
-		<!--Sample slide info until i incorporate my personal projects-->
-		<ng-template class="project-slides" ngbSlide *ngFor="let project of projects">
-			<div class="template">
-				<div class="picsum-img-wrapper">
-					<img class="img-fluid" [src]="project.imageUrl" [alt]="project.title" />
-				</div>
-				<div class="project-details">
-					<h3 id="responsive-text" class="project-header">{{ project.title }}</h3>
-					<div class="project-nav">
-						<a id="responsive-text-important" target="_blank" [href]="project.githubUrl" class="btn">Github <i class="bi bi-arrow-right"></i></a>
-					</div>
-					<p id="responsive-text" class="project-tag"><span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span></p>
-				</div>
-			</div>
-			<br>
-		</ng-template>
-	</ngb-carousel>
+<section class="projects">
+    <h2 class="projects-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- Flight Booking App -->
+        <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Flight Booking Web Application</h3>
+            <p>
+                Full-stack web application for searching and booking flights with RESTful APIs, server-side logic, and database persistence.
+            </p>
+            <div class="project-tags">
+                <span>#Java</span>
+                <span>#SpringBoot</span>
+                <span>#REST</span>
+                <span>#MySQL</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Tevi22/flight-booking-app" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Auth Service -->
+        <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Authentication & Registration Service</h3>
+            <p>
+                RESTful authentication service supporting user login and registration with credential validation and XML-based data storage.
+            </p>
+            <div class="project-tags">
+                <span>#Java</span>
+                <span>#SpringBoot</span>
+                <span>#REST</span>
+                <span>#XML</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Tevi22/authservice" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Ace Restaurant App -->
+        <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Ace Restaurant Ordering App</h3>
+            <p>
+                Android application for restaurant ordering with interactive UI, pricing logic, and clean separation of UI and business logic.
+            </p>
+            <div class="project-tags">
+                <span>#Java</span>
+                <span>#Android</span>
+                <span>#UI</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Tevi22/AceRestaurant-" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project-card">
+            <div class="project-image"></div>
+            <h3>Developer Portfolio Website</h3>
+            <p>
+                Single-page Angular application designed to showcase projects, skills, and experience with a modern, responsive layout.
+            </p>
+            <div class="project-tags">
+                <span>#Angular</span>
+                <span>#TypeScript</span>
+                <span>#CSS</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Tevi22/Tevins-Porfolio" target="_blank">GitHub</a>
+                <a href="https://tevi22.github.io/Tevins-Porfolio/" target="_blank">Live</a>
+            </div>
+        </div>
+
+    </div>
 </section>
