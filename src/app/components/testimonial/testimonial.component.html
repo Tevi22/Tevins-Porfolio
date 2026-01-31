@@ -1,17 +1,17 @@
-<section id="projects">
-  <br>
-  <h2>Testimonials</h2>
-  <ngb-carousel>
-    <!--Sample slide info until i incorporate my personal projects-->
-    <ng-template class="project-slides" ngbSlide *ngFor="let testimonial of testimonials">
-      <div class="template">
-        <br>
-        <div class="img-box"><img class="rounded-circle" [src]="testimonial.imageUrl" [alt]="testimonial.title"></div>
-        <br>
-        <p class="testimonial">{{ testimonial.text}}</p>
-        <p class="overview">{{ testimonial.author}} - <span>{{ testimonial.jobTitle}}</span></p>
-        <br>
-      </div>
-    </ng-template>
-  </ngb-carousel>
+<section class="testimonial">
+    <h2 class="testimonial-title">Testimonial</h2>
+    <div class="testimonial-container">
+
+        <blockquote>
+            <p>
+                “Tevin’s creativity shone through in crafting a remarkable movie rating application, demonstrating strong problem-solving skills and thoughtful UI design.”
+            </p>
+        </blockquote>
+
+        <div class="testimonial-author">
+            <span class="name">Shrikant Kulkarni</span>
+            <span class="title">ServiceNow Trainer</span>
+        </div>
+
+    </div>
 </section>
