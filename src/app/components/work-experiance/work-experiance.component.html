@@ -1,42 +1,78 @@
-<section id="experience" class="timeline-section">
-    <header>
-        <h5>My Qualifications</h5>
-        <h2 class="heading">My journey</h2>
-    </header>
-    <div class="container py-5">
-        <!-- Timeline -->
-        <div class="timeline">
-            <!-- Work Experience Column -->
-            <div class="timeline-column left">
-                <h3 class="subheading">Work Experience</h3>
-                <!-- Work Experience Items -->
-                <div class="timeline-item" *ngFor="let experience of workExperience" data-aos="slideInFromLeft">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- Work Experience Content -->
-                            <h4 class="responsive-text"> {{ experience.company }}</h4>
-                            <h5 class="responsive-text-important"> {{ experience.role }}</h5>
-                            <small class="responsive-text text-secondary"><i class="bi bi-calendar3"></i>{{ experience.date }}</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Education Column -->
-            <div class="timeline-column right">
-                <h3 class="subheading">Education</h3>
-                <!-- Education Items -->
-                <div class="timeline-item" *ngFor="let edu of education" data-aos="slideInFromRight">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- Education Content -->
-                            <h4 class="responsive-text">{{ edu.schoolName }}</h4>
-                            <h5 class="responsive-text-important">{{ edu.degree }}</h5>
-                            <h4 class="responsive-text">{{ edu.year }}</h4>
-                            <small class="responsive-text text-secondary"><i class="bi bi-calendar3"></i> {{ edu.date }}</small>
-                        </div>
-                    </div>
-                </div>
+<section class="journey">
+    <h2 class="journey-title">My Journey</h2>
+
+    <div class="timeline">
+
+        <!-- 2025 – Present -->
+        <div class="timeline-item left">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2025 – Present</h3>
+                <h4>Senior Tech Support Associate, Infosys</h4>
+                <p>
+                    Provide advanced technical support for enterprise network and application environments, diagnosing complex connectivity, performance, and configuration issues while collaborating with cross-functional teams to resolve incidents efficiently.
+                </p>
             </div>
         </div>
+
+        <!-- 2023 – 2025 -->
+        <div class="timeline-item right">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2023 – 2025</h3>
+                <h4>Tech Support Associate, Infosys</h4>
+                <p>
+                    Real-world troubleshooting, enterprise systems support, and developing strong user empathy through daily client interactions.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2022 – 2023 -->
+        <div class="timeline-item left">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2022 – 2023</h3>
+                <h4>Tech Support Intern, Infosys</h4>
+                <p>
+                    Learned structured IT workflows, incident management, and foundational enterprise support practices.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2017 – 2022 -->
+        <div class="timeline-item right">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>2017 – 2022</h3>
+                <h4>General Manager, The Old Spaghetti Factory</h4>
+                <p>
+                    Leadership, communication, and team management in a fast-paced, customer-focused environment.
+                </p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item left">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>SNHU 2025-Present</h3>
+                <h4>Information Technology MS (GPA 4.0)</h4>
+                <p>
+                    Currently pursuing a Master’s in Information Technology with a focus on software application development.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="dot"></div>
+            <div class="content">
+                <h3>SNHU 2023-2025</h3>
+                <h4>Information Technology BA (GPA 3.9)</h4>
+                <p>
+                    Strong foundation in software development, web technologies, UX/UI design, and application architecture.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
