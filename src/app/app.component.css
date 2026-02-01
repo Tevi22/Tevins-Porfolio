@@ -3,6 +3,14 @@ app-root {
     width: 100%;
 }
 
+main {
+    margin-top: 0 !important;
+}
+
+main>section:first-child {
+    padding-top: 0 !important;
+}
+
 :host {
     display: block;
     width: 100%;
