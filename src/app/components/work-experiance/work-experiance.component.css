@@ -1,52 +1,76 @@
-/*Section + Work Experience Styles*/
+/* =========================
+   Journey Section
+========================= */
 
 .journey {
-    padding: 6rem 2rem;
-    background: #faf9f7;
+    padding: 6rem 1.5rem;
+    background: var(--background-color);
 }
 
 .journey-title {
     text-align: center;
-    font-size: 2.4rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
     color: var(--color-primary);
+    font-weight: 700;
+}
+
+.education-title {
+    display: none;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--color-primary);
+    font-weight: 700;
 }
 
 
-/*Timeline base styles*/
+/* =========================
+   Timeline Wrapper
+========================= */
 
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
+
+
+/* Vertical line */
 
 .timeline::before {
     content: "";
     position: absolute;
-    left: 50%;
     top: 0;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
     width: 2px;
-    height: 100%;
-    background: var(--color-primary-linear);
+    background: rgba(183, 107, 245, 0.35);
+    transform: translateX(-50%);
 }
 
 
-/*Timeline items*/
+/* =========================
+   Timeline Items
+========================= */
 
 .timeline-item {
     position: relative;
     width: 50%;
     padding: 2rem 3rem;
+    box-sizing: border-box;
 }
+
+
+/* Left side */
 
 .timeline-item.left {
     left: 0;
     text-align: right;
 }
+
+
+/* Right side */
 
 .timeline-item.right {
     left: 50%;
@@ -54,68 +78,111 @@
 }
 
 
-/* Dots */
+/* =========================
+   Dot
+========================= */
 
-.dot {
+.timeline-item .dot {
     position: absolute;
-    top: 2.5rem;
-    width: 14px;
-    height: 14px;
+    top: 2.2rem;
+    width: 12px;
+    height: 12px;
     background: var(--color-primary);
     border-radius: 50%;
     z-index: 2;
 }
 
+
+/* Dot alignment */
+
 .timeline-item.left .dot {
-    right: -7px;
+    right: -6px;
 }
 
 .timeline-item.right .dot {
-    left: -7px;
+    left: -6px;
 }
 
 
-/* Content styles */
+/* =========================
+   Content Card
+========================= */
 
-.content h3 {
-    font-size: 1.2rem;
+.timeline-item .content {
+    background: transparent;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
+    color: var(--text-color);
 }
 
-.content h4 {
-    font-size: 1.05rem;
+.timeline-item h4 {
+    margin: 0.3rem 0 0.6rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.6rem;
-    color: #1e2a32;
+    color: var(--text-color);
 }
 
-.content p {
+.timeline-item p {
+    margin: 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #5f6b73;
-    max-width: 360px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 
-/* Responsive Design */
+/* =========================
+   MOBILE VIEW
+========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+    .education-title {
+        display: block;
+    }
+    /* Remove timeline visuals */
     .timeline::before {
-        left: 12px;
+        display: none;
+    }
+    .timeline-item .dot {
+        display: none;
+    }
+    /* Stack items cleanly */
+    .timeline {
+        padding: 0;
     }
     .timeline-item {
         width: 100%;
-        padding-left: 3rem;
-        padding-right: 1rem;
+        left: 0 !important;
+        padding: 0;
+        margin-bottom: 2.5rem;
         text-align: left;
     }
-    .timeline-item.left,
-    .timeline-item.right {
-        left: 0;
+    /* Card-style content */
+    .timeline-item .content {
+        background: rgba(183, 107, 245, 0.08);
+        border-radius: 14px;
+        padding: 1.5rem;
+        text-align: left;
     }
-    .dot {
-        left: 6px !important;
-        right: auto;
+    .timeline-item h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .timeline-item h4 {
+        font-size: 0.95rem;
+        margin-top: 0.25rem;
+    }
+    .timeline-item p {
+        font-size: 0.9rem;
+        margin-top: 0.75rem;
+        line-height: 1.6;
+    }
+    .timeline-item h3,
+    .timeline-item h4,
+    .timeline-item p {
+        text-align: left;
     }
 }
