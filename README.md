@@ -1,72 +1,129 @@
-# Portfolio Project
+# Tevin Davis — Developer Portfolio
 
-This is a portfolio project built using Angular. It showcases my skills, projects, and experience in a visually appealing and interactive manner.
-This project was generated with Angular CLI version 17.2.2.
+This repository contains my personal developer portfolio, built with Angular 17.
+The site showcases my projects, skills, experience, and design approach with a clean, responsive UI and modern front-end practices.
+
+🔗 Live Site:
+<https://tevi22.github.io/Tevins-Porfolio/>
 
 ## Features
 
-- **Angular Components**: Utilizes Angular's component-based architecture for modular and reusable UI elements.
-- **Responsive Design**: Ensures optimal viewing experience across various devices and screen sizes.
-- **Dynamic Content**: Allows easy management and updating of projects and content through Angular components and data binding.
-- **CSS Styling**: Custom CSS styling for enhanced visual appeal and user experience.
-- **Angular Routing**: Implements Angular's routing module for navigation between different sections of the portfolio.
-- **Template Driven Forms**: Includes contact form for easy communication with visitors.
+**Angular 17 (Standalone Components)**
+-Built using Angular’s modern standalone architecture for clean, modular code.
 
-## Getting Started
+**Responsive Design**
+-Fully responsive layout optimized for desktop, tablet, and mobile devices.
 
-Clone the repository:
+**Light / Dark Theme Toggle**
+-User-selectable theme with persistence via localStorage.
+
+**Project Showcase**
+-Project cards with screenshots, descriptions, technology tags, and GitHub links.
+
+**Mobile-Optimized Experience Timeline**
+-Desktop timeline layout with a simplified, card-based experience for mobile.
+
+**Contact Section**
+-Clear call-to-action with email and LinkedIn links.
+
+**Modern UI Styling**
+-Custom CSS with CSS variables, gradients, shadows, and smooth transitions.
+
+**GitHub Pages Deployment**
+-Production-ready build deployed using the docs/ directory.
+
+## Tech Stack
+
+-Framework: Angular 17
+-Language: TypeScript
+-Styling: CSS (custom, no UI framework dependency)
+-State / Utilities: Angular Services
+-Deployment: GitHub Pages
+
+## Getting Started (Local Development)
+
+1. Clone the repository
+
 ```bash
-git clone https://github.com/your-username/portfolio-project.git
+git clone <https://github.com/Tevi22/Tevins-Porfolio.git>
+cd Tevins-Porfolio
+```
 
-Install dependencies:
+1. Install dependencies
 
-cd portfolio-project
+```bash
 npm install
+```
 
-Run the development server:
+1. Run the development server
 
 ng serve
 
-Open your browser and navigate to http://localhost:4200/ to view the project.
+1. Open your browser and navigate to:
 
-Folder Structure
-Tevins-Portfolio/
-├── sever/
+<http://localhost:4200/>
+
+*The app will automatically reload when you make changes.*
+
+## Build & Deployment (GitHub Pages)
+
+This project is deployed using GitHub Pages via the docs/ folder.
+
+## Build for production
+
+```bash
+ng build --configuration production --output-path docs --base-href /Tevins-Porfolio/
+```
+
+## Deployment steps
+
+1. Commit and push the docs/ folder to the main branch
+
+In GitHub:
+
+2. Go to Settings → Pages
+
+3. Set source to main / docs
+
+Visit:
+
+<https://tevi22.github.io/Tevins-Porfolio/>
+
+## Project Structure
+
+Tevins-Porfolio/
+├── docs/                    # Production build (GitHub Pages)
 ├── src/
 │   ├── app/
-│       ├── assets/             # Static assets (images, styles, etc.)
-|           ├── scripts/        # Javascript code 
-│   │   ├── services/           # Angular services
-│   │   └── app.module.ts       # Main application module
-│   ├── components/             # Angular components
-│   └── index.html              # Main HTML file
-├── .gitignore                  # Git ignore file
-├── angular.json                # Angular configuration file
-├── package.json                # NPM package dependencies and scripts
-├── README.md                   # Project README file
-└── server.ts                   # Server-side TypeScript file
-dependencies
+│   │   ├── components/       # Standalone UI components
+│   │   ├── services/         # Angular services (theme, etc.)
+│   │   ├── app.component.ts
+│   │   ├── app.routes.ts
+│   │   └── app.config.ts
+│   ├── assets/               # Images, icons, static files
+│   └── styles.css            # Global styles
+├── angular.json
+├── package.json
+├── README.md
+└── tsconfig.json
 
-Contributing
-Contributions are welcome! Please feel free to submit issues and pull requests.
+## Testing & Tooling
 
-License
+**Unit Tests: Karma + Jasmine**
+ng test
+
+## Scaffolding
+
+```bash
+ng generate component component-name
+ng generate service service-name
+```
+
+## License
+
 This project is licensed under the MIT License.
 
-Development server
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
+🙌 Contributions
 
-Code scaffolding
-Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
-
-Build
-Run ng build to build the project. The build artifacts will be stored in the dist/ directory.
-
-Running unit tests
-Run ng test to execute the unit tests via Karma.
-
-Running end-to-end tests
-Run ng e2e to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-Further help
-To get more help on the Angular CLI use ng help or go check out the Angular CLI Overview and Command Reference page.
+While this is a personal portfolio, feedback and suggestions are welcome.
+Feel free to open an issue or start a discussion.
