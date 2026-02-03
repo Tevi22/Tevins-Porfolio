@@ -1,27 +1,46 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Injectable, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  private currentThemeSubject: BehaviorSubject<string>;
-  public currentTheme$: Observable<string>;
+  private readonly THEME_KEY = 'theme';
+  private isBrowser: boolean;
 
-  constructor() { 
-    // Initialize with defualt theme
-    this.currentThemeSubject = new BehaviorSubject<string>('light-theme');
-    this.currentTheme$ = this.currentThemeSubject.asObservable();
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(DOCUMENT) private document: Document
+  ) {
+    this.isBrowser = isPlatformBrowser(this.platformId);
   }
 
-  getCurrentTheme(): Observable<string> {
-    return this.currentTheme$;
+  initTheme(): void {
+    if (!this.isBrowser) return;
+
+    const savedTheme = localStorage.getItem(this.THEME_KEY) || 'light-theme';
+    this.document.body.classList.add(savedTheme);
   }
 
   toggleTheme(): void {
-    const currentTheme = this.currentThemeSubject.getValue();
-    const newTheme = currentTheme === 'light-theme' ? 'dark-theme' : 'light-theme';
-    this.currentThemeSubject.next(newTheme);
+    if (!this.isBrowser) return;
+
+    const body = this.document.body;
+    const isDark = body.classList.contains('dark-theme');
+
+    body.classList.remove(isDark ? 'dark-theme' : 'light-theme');
+    body.classList.add(isDark ? 'light-theme' : 'dark-theme');
+
+    localStorage.setItem(
+      this.THEME_KEY,
+      isDark ? 'light-theme' : 'dark-theme'
+    );
   }
-  
+
+  isDarkTheme(): boolean {
+    if (!this.isBrowser) return false;
+    return this.document.body.classList.contains('dark-theme');
+  }
 }
