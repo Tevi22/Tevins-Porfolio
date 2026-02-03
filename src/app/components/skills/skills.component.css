@@ -2,7 +2,7 @@
 
 .skills {
     padding: 6rem 2rem;
-    background: #faf9f7;
+    background-color: var(--background-color);
 }
 
 .skills-title {
@@ -45,7 +45,7 @@
 
 .skills-column li {
     font-size: 1.05rem;
-    color: #1e2a32;
+    color: var(--text-muted);
     margin-bottom: 1.2rem;
 }
 

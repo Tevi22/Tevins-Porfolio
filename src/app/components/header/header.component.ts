@@ -1,34 +1,28 @@
 import { Component } from '@angular/core';
-import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap';
-import { CommonModule  } from '@angular/common';
-
-declare function toggleTheme(): void; // Declare the toggleTheme function
+import { ThemeService } from '../../../services/theme.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
-    NgbCollapse,
-    CommonModule,
-
+    CommonModule
   ],
   templateUrl: 'header.component.html',
   styleUrls: ['header.component.css'],
 })
 
 export class HeaderComponent {
-  isCollapsed: boolean = false;
-  enableClick: boolean = true;
+
+  constructor(public themeService: ThemeService) { }
 
   toggleTheme(): void {
-    // Call the globally declared toggleTheme function
-    toggleTheme();
-    this.toggleNavbar();
+    this.themeService.toggleTheme();
   }
 
-  toggleNavbar() {
-    this.isCollapsed = !this.isCollapsed;
+  get isDark(): boolean {
+    return this.themeService.isDarkTheme();
   }
 
-  
+
 }

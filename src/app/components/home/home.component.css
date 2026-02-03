@@ -2,7 +2,7 @@
 
 .hero {
     padding: 4rem 2rem 6rem;
-    background: #faf9f7;
+    background-color: var(--background-color);
 }
 
 .hero-container {

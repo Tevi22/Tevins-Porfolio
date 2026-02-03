@@ -4,7 +4,7 @@
 
 .journey {
     padding: 6rem 1.5rem;
-    background: #faf9f7;
+    background-color: var(--background-color);
 }
 
 .journey-title {
@@ -130,7 +130,7 @@
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.6;
-    color: rgba(0, 0, 0, 0.65);
+    color: var(--text-muted);
 }
 
 

@@ -2,7 +2,7 @@
 
 .projects {
     padding: 6rem 2rem;
-    background: #faf9f7;
+    background-color: var(--background-color);
 }
 
 .projects-title {

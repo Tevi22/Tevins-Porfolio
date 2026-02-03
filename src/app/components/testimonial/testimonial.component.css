@@ -2,7 +2,7 @@
 
 .testimonial {
     padding: 7rem 2rem;
-    background: #faf9f7;
+    background-color: var(--background-color);
 }
 
 .testimonial-title {
@@ -33,7 +33,7 @@ blockquote p {
     font-size: 2.1rem;
     line-height: 1.4;
     font-weight: 500;
-    color: #1e2a32;
+    color: var(--text-muted);
 }
 
 
