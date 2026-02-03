@@ -4,7 +4,7 @@ This repository contains my personal developer portfolio, built with Angular 17.
 The site showcases my projects, skills, experience, and design approach with a clean, responsive UI and modern front-end practices.
 
 🔗 Live Site:
-<https://tevi22.github.io/Tevins-Porfolio/>
+<https://tevi22.github.io/Tevins-Portfolio/>
 
 ## Features
 
