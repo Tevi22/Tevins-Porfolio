@@ -50,8 +50,8 @@
 
                 <!-- Theme toggle -->
                 <li class="nav-item ms-lg-3">
-                    <button class="btn btn-outline-light btn-sm">
-            Theme
+                    <button class="btn btn-outline-light btn-sm" (click)="toggleTheme()">
+            {{ isDark ? 'Light Mode' : 'Dark Mode' }}
           </button>
                 </li>
 
