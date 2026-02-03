@@ -7,6 +7,8 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, .6);
     --color-light-blue: #ADD8E6;
+    --border-light: rgba(0, 0, 0, 0.1);
+    --border-dark: rgba(255, 255, 255, 0.18);
     --transition: all .4s ease;
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -25,9 +27,10 @@ body {
 }
 
 body {
-    margin: 0;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Roboto-serif, "Helvetica Neue", sans-serif;
 }
 
 main {
@@ -38,13 +41,66 @@ main {
 /* Themes */
 
 .dark-theme {
-    --text-color: var(--color-white);
     --background-color: var(--color-bg);
+    --text-primary: #f8fafc;
+    /* headings */
+    --text-secondary: #cbd5e1;
+    /* paragraphs */
+    --text-muted: #94a3b8;
+    /* labels */
+}
+
+.dark-theme .project-card {
+    background: #0f1115;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme .project-card h3 {
+    color: var(--text-primary);
+}
+
+.dark-theme .project-card p {
+    color: var(--text-secondary);
+}
+
+.dark-theme .project-links a {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .light-theme {
-    --text-color: #000;
     --background-color: var(--color-white);
+    --text-primary: #0f172a;
+    /* headings */
+    --text-secondary: #334155;
+    /* paragraphs */
+    --text-muted: #64748b;
+    /* labels */
+}
+
+.light-theme .project-links a {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-primary);
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+small,
+.muted,
+.project-tags span {
+    color: var(--text-muted);
 }
 
 
@@ -237,14 +293,4 @@ main {
         opacity: 1;
         /* End with full opacity (fully visible) */
     }
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto-serif, "Helvetica Neue", sans-serif;
 }
