@@ -34,11 +34,16 @@ The site showcases my projects, skills, experience, and design approach with a c
 
 ## Tech Stack
 
--Framework: Angular 17
--Language: TypeScript
--Styling: CSS (custom, no UI framework dependency)
--State / Utilities: Angular Services
--Deployment: GitHub Pages
+**Framework:**
+-Angular 17
+**Language:**
+-TypeScript
+**Styling:**
+-CSS (custom, no UI framework dependency)
+**State / Utilities:**
+-Angular Services
+**Deployment:**
+-GitHub Pages
 
 ## Getting Started (Local Development)
 
