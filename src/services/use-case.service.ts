@@ -32,6 +32,12 @@ export class UseCaseService {
       ],
       challenges:
         'Designing clean API boundaries and managing frontend-backend integration.',
+      learnings: [
+        'How to design and consume RESTful APIs across frontend and backend',
+        'Structuring Angular applications using standalone components and routing',
+        'Managing server-side validation and database persistence with Spring Boot',
+        'Improving separation of concerns between UI, services, and data layers'
+      ],
       githubUrl: 'https://github.com/Tevi22/flight-booking-app'
     },
 
@@ -58,6 +64,14 @@ export class UseCaseService {
       ],
       challenges:
         'Ensuring secure validation while keeping the service lightweight.',
+      learnings: [
+        'Designing reusable authentication services for multiple applications',
+        'Implementing RESTful endpoints with proper validation and error handling',
+        'Managing user credentials securely within a backend service',
+        'Structuring backend applications for maintainability and scalability',
+        'Understanding authentication workflows independent of frontend concerns'
+      ],
+
       githubUrl: 'https://github.com/Tevi22/authservice'
     },
 
@@ -84,6 +98,12 @@ export class UseCaseService {
       ],
       challenges:
         'Ensuring accurate pricing logic while maintaining a responsive and intuitive UI.',
+      learnings: [
+        'Building native Android UIs with clean separation of UI and business logic',
+        'Implementing accurate pricing calculations in a mobile application',
+        'Improving user experience through iterative UI design',
+        'Debugging and testing Android application workflows'
+      ],
       githubUrl: 'https://github.com/Tevi22/AceRestaurant-'
     },
 
@@ -111,6 +131,12 @@ export class UseCaseService {
       ],
       challenges:
         'Balancing performance, maintainability, and design consistency while scaling the application.',
+      learnings: [
+        'Designing a scalable Angular application using standalone components',
+        'Implementing dynamic routing and reusable use case pages',
+        'Handling theming and global state across routed views',
+        'Deploying Angular applications to GitHub Pages'
+      ],
       githubUrl: 'https://github.com/Tevi22/Tevins-Portfolio',
       demoUrl: 'https://tevi22.github.io/Tevins-Portfolio/'
     },
@@ -138,6 +164,12 @@ export class UseCaseService {
       ],
       challenges:
         'Handling asynchronous API responses and ensuring accurate data presentation.',
+      learnings: [
+        'Consuming third-party APIs and handling asynchronous data',
+        'Managing application state during API calls',
+        'Designing responsive layouts for dynamic data',
+        'Improving error handling and loading states'
+      ],
       githubUrl: 'https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app'
     }
   ];
