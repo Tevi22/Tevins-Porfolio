@@ -19,7 +19,7 @@
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
                         "outputPath": "docs",
-                        "baseHref": "/Tevins-Portfolio/",
+                        "baseHref": "/",
                         "index": "./src/index.html",
                         "browser": "./src/main.ts",
                         "polyfills": [
@@ -44,6 +44,7 @@
                     },
                     "configurations": {
                         "production": {
+                            "baseHref": "/Tevins-Portfolio/",
                             "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "900kb",
