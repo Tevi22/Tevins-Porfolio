@@ -47,3 +47,12 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.use-case-section ul {
+    padding-left: 1.25rem;
+}
+
+.use-case-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
