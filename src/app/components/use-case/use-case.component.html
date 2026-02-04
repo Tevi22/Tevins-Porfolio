@@ -49,6 +49,15 @@
         <p>{{ useCase.challenges }}</p>
     </section>
 
+    <section class="use-case-section">
+        <h2>What I Learned</h2>
+        <ul>
+            <li *ngFor="let learning of useCase.learnings">
+                {{ learning }}
+            </li>
+        </ul>
+    </section>
+
     <div class="use-case-navigation">
         <a [routerLink]="['/']" fragment="projects" class="back-link">
       ← Back to Projects
