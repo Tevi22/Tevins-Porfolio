@@ -9,6 +9,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ThemeService } from '../services/theme.service';
+import { RouterOutlet } from "@angular/router";
 
 
 @Component({
@@ -24,7 +25,8 @@ import { ThemeService } from '../services/theme.service';
     TestimonialComponent,
     ContactComponent,
     FooterComponent,
-  ],
+    RouterOutlet
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
