@@ -1,0 +1,64 @@
+<section class="use-case-container" *ngIf="useCase; else notFound">
+
+    <header class="use-case-hero">
+        <h1>{{ useCase.title }}</h1>
+        <p>{{ useCase.description }}</p>
+
+        <div class="use-case-actions">
+            <a *ngIf="useCase.githubUrl" [href]="useCase.githubUrl" target="_blank" class="btn btn-outline">
+        View GitHub
+      </a>
+
+            <a *ngIf="useCase.demoUrl" [href]="useCase.demoUrl" target="_blank" class="btn btn-primary">
+        Live Demo
+      </a>
+        </div>
+    </header>
+
+    <section class="use-case-section">
+        <h2>Overview</h2>
+        <p>{{ useCase.overview }}</p>
+    </section>
+
+    <section class="use-case-section">
+        <h2>Problem</h2>
+        <p>{{ useCase.problem }}</p>
+    </section>
+
+    <section class="use-case-section">
+        <h2>Solution</h2>
+        <p>{{ useCase.solution }}</p>
+    </section>
+
+    <section class="use-case-section">
+        <h2>Tech Stack</h2>
+        <ul class="tech-list">
+            <li *ngFor="let tech of useCase.techStack">{{ tech }}</li>
+        </ul>
+    </section>
+
+    <section class="use-case-section">
+        <h2>Key Features</h2>
+        <ul>
+            <li *ngFor="let feature of useCase.features">{{ feature }}</li>
+        </ul>
+    </section>
+
+    <section class="use-case-section">
+        <h2>Challenges & Learnings</h2>
+        <p>{{ useCase.challenges }}</p>
+    </section>
+
+    <div class="use-case-navigation">
+        <a [routerLink]="['/']" fragment="projects" class="back-link">
+      ← Back to Projects
+    </a>
+    </div>
+
+</section>
+
+<ng-template #notFound>
+    <h2 style="text-align:center; padding:4rem;">
+        Use case not found.
+    </h2>
+</ng-template>
