@@ -8,6 +8,7 @@ export interface UseCase {
   techStack: string[];
   features: string[];
   challenges: string;
+  learnings: string[];
   githubUrl?: string;
   demoUrl?: string;
 }
