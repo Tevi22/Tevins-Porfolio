@@ -50,13 +50,13 @@ main {
     /* labels */
 }
 
-.dark-theme .project-card {
+body.dark-theme .project-card {
     background: #0f1115;
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-.dark-theme .project-card h3 {
+body.dark-theme .project-card h3 {
     color: var(--text-primary);
 }
 
@@ -79,7 +79,7 @@ main {
     /* labels */
 }
 
-.light-theme .project-links a {
+body.light-theme .project-links a {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
