@@ -60,11 +60,11 @@ body.dark-theme .project-card h3 {
     color: var(--text-primary);
 }
 
-.dark-theme .project-card p {
+body.dark-theme .project-card p {
     color: var(--text-secondary);
 }
 
-.dark-theme .project-links a {
+body.dark-theme .project-links a {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
@@ -79,7 +79,12 @@ body.dark-theme .project-card h3 {
     /* labels */
 }
 
-body.light-theme .project-links a {
+.light-theme .project-links a {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+body.light-theme .use-case-actions a {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
