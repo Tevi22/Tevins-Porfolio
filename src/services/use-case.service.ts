@@ -78,32 +78,49 @@ export class UseCaseService {
     {
       slug: 'ace-restaurant',
       title: 'Ace Restaurant Ordering App',
-      description: 'Android application for restaurant ordering with interactive UI and pricing logic.',
+      description:
+        'Native Android mobile ordering application simulating a full restaurant checkout experience with real-time pricing, validation, and user-centered design.',
+
       overview:
-        'This Android application was developed to simulate a real-world restaurant ordering experience with a focus on clean UI design and separation of concerns.',
+        'Ace Restaurant is a native Android application designed to simulate a real-world restaurant ordering workflow. The project focuses on clean architecture, responsive UI design, and realistic ordering logic, including menu browsing, item customization, cart management, and secure checkout validation. The app was built to reflect how modern mobile food-ordering platforms balance usability, performance, and maintainability.',
+
       problem:
-        'Many small restaurants lack affordable, easy-to-use mobile ordering systems.',
+        'Many small restaurants lack affordable, scalable mobile ordering solutions that provide a smooth user experience while remaining easy to maintain and extend.',
+
       solution:
-        'A native Android app that allows users to browse menus, calculate pricing, and place orders through an intuitive interface.',
+        'A native Android application that enables users to browse categorized menus, customize items, manage a cart, and complete an order through an intuitive, accessible interface. The solution emphasizes separation of concerns, real-time feedback, and validation to closely mirror production-level mobile ordering systems.',
+
       techStack: [
-        'Java',
+        'Kotlin',
         'Android SDK',
-        'MVC Architecture'
+        'Android Studio',
+        'MVVM / MVC-inspired Architecture',
+        'Jetpack Components (ViewModel, LiveData, Navigation)',
+        'Material Design'
       ],
+
       features: [
-        'Menu browsing and item selection',
-        'Dynamic pricing calculations',
-        'Clean UI and UX design',
-        'Separation of UI and business logic'
+        'Categorized menu browsing with real-time search',
+        'Item customization with dynamic price recalculation',
+        'Shared cart state across multiple screens',
+        'Checkout flow with inline form validation',
+        'Credit card auto-formatting and length verification',
+        'Order summary with subtotal, tax, and total updates',
+        'Accessibility-aware UI using Material Design principles'
       ],
+
       challenges:
-        'Ensuring accurate pricing logic while maintaining a responsive and intuitive UI.',
+        'Balancing accurate pricing logic and input validation while maintaining a responsive UI across multiple fragments. Additional challenges included handling edge cases in credit card formatting, managing shared state between cart and checkout screens, and ensuring accessibility without compromising visual clarity.',
+
       learnings: [
-        'Building native Android UIs with clean separation of UI and business logic',
-        'Implementing accurate pricing calculations in a mobile application',
-        'Improving user experience through iterative UI design',
-        'Debugging and testing Android application workflows'
+        'Designing a real-world mobile ordering workflow from concept to implementation',
+        'Applying separation of concerns using ViewModels and shared state',
+        'Implementing defensive input validation for payment-related fields',
+        'Improving UX through real-time feedback and dynamic UI updates',
+        'Building scalable Android applications with future backend integration in mind',
+        'Incorporating accessibility and ethical design practices early in development'
       ],
+
       githubUrl: 'https://github.com/Tevi22/AceRestaurant-'
     },
 
