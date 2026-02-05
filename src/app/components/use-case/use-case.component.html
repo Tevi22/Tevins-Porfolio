@@ -1,65 +1,103 @@
 <section class="use-case-container" *ngIf="useCase; else notFound">
 
+    <!-- Hero -->
     <header class="use-case-hero">
         <h1>{{ useCase.title }}</h1>
-        <p>{{ useCase.description }}</p>
+        <p class="subtitle">{{ useCase.description }}</p>
+
+        <!-- Hero image -->
+        <img *ngIf="useCase.imageUrl" [src]="useCase.imageUrl" [alt]="useCase.title + ' screenshot'" class="use-case-hero-image" />
 
         <div class="use-case-actions">
-            <a *ngIf="useCase.githubUrl" [href]="useCase.githubUrl" target="_blank" class="btn btn-outline">
-        View GitHub
+            <a *ngIf="useCase.githubUrl" [href]="useCase.githubUrl" target="_blank" class="project-btn">
+        GitHub
       </a>
 
-            <a *ngIf="useCase.demoUrl" [href]="useCase.demoUrl" target="_blank" class="btn btn-primary">
+            <a *ngIf="useCase.demoUrl" [href]="useCase.demoUrl" target="_blank" class="project-btn primary">
         Live Demo
       </a>
         </div>
     </header>
 
-    <section class="use-case-section">
-        <h2>Overview</h2>
-        <p>{{ useCase.overview }}</p>
-    </section>
+    <!-- Meta Row -->
+    <div class="meta-row">
+        <div class="meta-item">
+            <span class="label">Role</span>
+            <strong>{{ useCase.role }}</strong>
+        </div>
 
-    <section class="use-case-section">
-        <h2>Problem</h2>
-        <p>{{ useCase.problem }}</p>
-    </section>
+        <div class="meta-item">
+            <span class="label">Timeline</span>
+            <strong>{{ useCase.timeline }}</strong>
+        </div>
+    </div>
 
-    <section class="use-case-section">
-        <h2>Solution</h2>
-        <p>{{ useCase.solution }}</p>
-    </section>
+    <!-- Main Grid -->
+    <div class="content-grid">
 
-    <section class="use-case-section">
-        <h2>Tech Stack</h2>
-        <ul class="tech-list">
-            <li *ngFor="let tech of useCase.techStack">{{ tech }}</li>
-        </ul>
-    </section>
+        <!-- Left -->
+        <div>
+            <section>
+                <h3>The Challenge</h3>
+                <p>{{ useCase.problem }}</p>
+            </section>
 
-    <section class="use-case-section">
-        <h2>Key Features</h2>
-        <ul>
-            <li *ngFor="let feature of useCase.features">{{ feature }}</li>
-        </ul>
-    </section>
+            <section>
+                <h3>Solution</h3>
+                <p>{{ useCase.solution }}</p>
+            </section>
 
-    <section class="use-case-section">
-        <h2>Challenges & Learnings</h2>
-        <p>{{ useCase.challenges }}</p>
-    </section>
+            <section>
+                <h3>Key Highlights</h3>
+                <ul class="checklist">
+                    <li *ngFor="let feature of useCase.features.slice(0,3)">
+                        {{ feature }}
+                    </li>
+                </ul>
+            </section>
 
-    <section class="use-case-section">
-        <h2>What I Learned</h2>
-        <ul>
-            <li *ngFor="let learning of useCase.learnings">
-                {{ learning }}
-            </li>
-        </ul>
-    </section>
+            <section>
+                <h3>Overcoming Challenges</h3>
+                <p>{{ useCase.challenges }}</p>
+            </section>
+        </div>
 
+        <!-- Right -->
+        <div>
+            <section>
+                <h3>User Flow</h3>
+                <ul class="flow">
+                    <li *ngFor="let step of useCase.userFlow">
+                        {{ step }}
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Features</h3>
+                <ul class="checklist">
+                    <li *ngFor="let feature of useCase.features">
+                        {{ feature }}
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Learnings -->
+            <section>
+                <h3>What I Learned</h3>
+                <ul class="checklist">
+                    <li *ngFor="let learning of useCase.learnings">
+                        {{ learning }}
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Back -->
     <div class="use-case-navigation">
-        <a [routerLink]="['/']" fragment="projects" class="back-link">
+        <a [routerLink]="['/']" fragment="projects">
       ← Back to Projects
     </a>
     </div>
@@ -67,7 +105,5 @@
 </section>
 
 <ng-template #notFound>
-    <h2 style="text-align:center; padding:4rem;">
-        Use case not found.
-    </h2>
+    <h2 class="not-found">Use case not found.</h2>
 </ng-template>
