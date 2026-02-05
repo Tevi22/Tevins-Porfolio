@@ -10,68 +10,76 @@ export class UseCaseService {
     {
       slug: 'flight-booking',
       title: 'Flight Booking Web Application',
-      description: 'A full-stack flight search and booking system.',
+      description: 'A full-stack airline booking system with real-time seat management and transactional bookings.',
       overview:
-        'This project demonstrates full-stack application development using Angular and Spring Boot.',
+        'This project simulates a real-world airline reservation system, allowing users to search for flights, book seats, view confirmations, and cancel bookings while maintaining accurate seat availability.',
       problem:
-        'Users need an intuitive way to search and book flights without complex workflows.',
+        'Airline booking systems must manage dynamic inventory, prevent overbooking, and ensure data consistency across searches, bookings, and cancellations.',
       solution:
-        'A modular Angular frontend integrated with RESTful Spring Boot APIs and MySQL.',
+        'A Spring Boot MVC application using RESTful endpoints, a service-driven architecture, and a MySQL database to handle bookings and seat availability transactionally.',
       techStack: [
-        'Angular 17',
-        'Spring Boot',
+        'Java 17',
+        'Spring Boot (MVC, JPA)',
+        'Thymeleaf',
         'MySQL',
         'REST APIs',
-        'JUnit / Mockito'
+        'JUnit / MockMvc'
       ],
       features: [
-        'Flight search and filtering',
-        'Booking workflow',
-        'User authentication',
-        'Server-side validation'
+        'Case-insensitive flight search by origin, destination, and date',
+        'Flight booking with passenger tracking',
+        'Transactional seat availability management',
+        'Booking confirmation and cancellation workflow',
+        'Server-side validation and error handling'
       ],
       challenges:
-        'Designing clean API boundaries and managing frontend-backend integration.',
+        'Ensuring seat counts remained consistent across booking and cancellation workflows while maintaining clean separation between controller, service, and repository layers.',
       learnings: [
-        'How to design and consume RESTful APIs across frontend and backend',
-        'Structuring Angular applications using standalone components and routing',
-        'Managing server-side validation and database persistence with Spring Boot',
-        'Improving separation of concerns between UI, services, and data layers'
+        'Designing transactional business logic with Spring services',
+        'Implementing RESTful search endpoints backed by a relational database',
+        'Applying the Post/Redirect/Get pattern to prevent duplicate submissions',
+        'Writing controller-level unit tests with MockMvc',
+        'Debugging real-world issues related to persistence, routing, and test alignment'
       ],
       githubUrl: 'https://github.com/Tevi22/flight-booking-app'
     },
 
     {
       slug: 'auth-service',
-      title: 'Authentication & Registration Service',
-      description: 'RESTful authentication service for user login and registration.',
+      title: 'Authentication & Registration REST Service',
+      description: 'A Spring Boot RESTful authentication service with XML-based persistence and clean layered architecture.',
       overview:
-        'A backend-focused service designed to handle authentication and validation.',
+        'This project is a backend-focused authentication and registration service built with Spring Boot and Java 17. It demonstrates RESTful API design, clean separation of concerns, and alternative persistence strategies using XML rather than a traditional database.',
       problem:
-        'Applications require secure, reusable authentication logic.',
+        'Many applications need lightweight, reusable authentication logic without the overhead of a full database or identity provider during early development or academic prototyping.',
       solution:
-        'A Spring Boot REST service with validation and XML-based persistence.',
+        'A modular Spring Boot REST service that supports user registration and authentication, persisting user data in an XML file using JAXB while exposing clean, testable REST endpoints.',
       techStack: [
-        'Java',
+        'Java 17',
         'Spring Boot',
         'REST APIs',
-        'XML'
+        'JAXB',
+        'XML Persistence',
+        'Maven',
+        'JUnit'
       ],
       features: [
-        'User registration',
-        'Credential validation',
-        'Reusable authentication endpoints'
+        'User registration and authentication endpoints',
+        'XML-based user persistence using JAXB',
+        'RESTful API design with clear HTTP status handling',
+        'Layered controller-service-model architecture',
+        'Basic front-end HTML pages for manual API testing',
+        'Controller-level unit testing'
       ],
       challenges:
-        'Ensuring secure validation while keeping the service lightweight.',
+        'Designing a secure and maintainable authentication flow while using XML-based persistence instead of a traditional database.',
       learnings: [
-        'Designing reusable authentication services for multiple applications',
+        'Designing reusable authentication services independent of frontend frameworks',
         'Implementing RESTful endpoints with proper validation and error handling',
-        'Managing user credentials securely within a backend service',
-        'Structuring backend applications for maintainability and scalability',
-        'Understanding authentication workflows independent of frontend concerns'
+        'Using JAXB for XML marshaling and unmarshaling in Java applications',
+        'Applying clean controller-service-model architecture in Spring Boot',
+        'Understanding authentication workflows without relying on databases or third-party identity providers'
       ],
-
       githubUrl: 'https://github.com/Tevi22/authservice'
     },
 
@@ -160,32 +168,38 @@ export class UseCaseService {
 
     {
       slug: 'weather-app',
-      title: 'Weather App',
-      description: 'Angular application for fetching and displaying weather data from a public API.',
+      title: 'Weather Forecast Web Application',
+      description: 'Angular single-page application for retrieving and displaying real-time and forecasted weather data.',
       overview:
-        'This project demonstrates API integration, data handling, and responsive UI design using Angular.',
+        'This project is a frontend-focused Angular application built to demonstrate API integration, component-based design, and responsive UI development. It was created using Angular CLI and emphasizes clean structure, reusable components, and smooth data-driven updates.',
       problem:
-        'Users need a simple way to view current and forecasted weather without cluttered interfaces.',
+        'Many weather applications overwhelm users with cluttered layouts and unnecessary information, making it difficult to quickly understand current and upcoming conditions.',
       solution:
-        'An Angular SPA that consumes a public weather API and presents data in a clean, user-friendly format.',
+        'A lightweight Angular single-page application that consumes a public weather API and presents current conditions and forecasts in a clear, readable, and responsive interface.',
       techStack: [
-        'Angular',
+        'Angular 17',
         'TypeScript',
-        'Public Weather API'
+        'HTML5',
+        'CSS',
+        'Public Weather API',
+        'Angular CLI'
       ],
       features: [
-        'Real-time weather data',
-        '7-day forecast display',
-        'API integration',
-        'Responsive layout'
+        'Real-time weather data retrieval',
+        'Forecast display for upcoming days',
+        'API-driven data rendering',
+        'Component-based UI architecture',
+        'Responsive design for desktop and mobile',
+        'Automatic refresh during development with Angular CLI'
       ],
       challenges:
-        'Handling asynchronous API responses and ensuring accurate data presentation.',
+        'Managing asynchronous API calls, handling loading states, and ensuring reliable data presentation while keeping the UI clean and responsive.',
       learnings: [
-        'Consuming third-party APIs and handling asynchronous data',
-        'Managing application state during API calls',
-        'Designing responsive layouts for dynamic data',
-        'Improving error handling and loading states'
+        'Consuming third-party APIs using Angular services',
+        'Handling asynchronous data flows and state updates',
+        'Structuring Angular applications with reusable components',
+        'Improving user experience through responsive layouts',
+        'Using Angular CLI tooling for development, builds, and testing'
       ],
       githubUrl: 'https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app'
     }
