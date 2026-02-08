@@ -245,7 +245,7 @@ export class UseCaseService {
         'Angular single-page application for retrieving and displaying real-time and forecasted weather data through a clean, responsive interface.',
 
       role: 'Frontend Developer',
-      timeline: 'Under development',
+      timeline: 'Under development(UI Redesign in progress)',
 
       problem:
         'Many weather applications overwhelm users with cluttered layouts and excessive data, making it difficult to quickly understand current and upcoming conditions.',
