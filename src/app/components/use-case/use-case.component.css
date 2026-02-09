@@ -138,28 +138,47 @@
    Lists
 ========================= */
 
-.checklist,
-.flow {
-    list-style: none;
-    padding-left: 0;
-}
-
 .checklist li,
 .flow li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    list-style: none;
 }
+
+
+/* Checklist icon */
 
 .checklist li::before {
     content: "✔";
-    margin-right: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.15em;
     color: var(--color-primary);
+    font-weight: 600;
+    opacity: 1;
+    -webkit-text-fill-color: currentColor;
+    /* iOS Safari fix */
 }
+
+
+/* Flow arrow */
 
 .flow li::before {
     content: "→";
-    margin-right: 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 0.15em;
     color: var(--color-primary);
+    font-weight: 600;
+    opacity: 1;
+    -webkit-text-fill-color: currentColor;
+}
+
+.checklist li::before,
+.flow li::before {
+    color: var(--color-primary, #6f2cff);
 }
 
 
