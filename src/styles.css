@@ -109,18 +109,6 @@ small,
 }
 
 
-/* Force consistent icon color across mobile browsers */
-
-i,
-.bi,
-.nav-link i,
-.footer i {
-    color: var(--color-primary);
-    opacity: 1;
-    -webkit-text-fill-color: currentColor;
-}
-
-
 /* Custom AOS Animations */
 
 
