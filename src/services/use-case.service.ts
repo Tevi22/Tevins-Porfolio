@@ -53,7 +53,8 @@ export class UseCaseService {
         'Writing controller-level unit tests with MockMvc',
         'Debugging real-world issues related to persistence, routing, and test alignment'
       ],
-      githubUrl: 'https://github.com/Tevi22/flight-booking-app'
+      githubUrl: 'https://github.com/Tevi22/flight-booking-app',
+      demoUrl: 'assets/Images/flightbookingapp.gif'
     },
 
     {
@@ -110,7 +111,8 @@ export class UseCaseService {
         'Understanding authentication design without relying on databases or third-party identity providers'
       ],
 
-      githubUrl: 'https://github.com/Tevi22/authservice'
+      githubUrl: 'https://github.com/Tevi22/authservice',
+      demoUrl: 'assets/Images/authservice.gif'
     },
 
     {
@@ -290,7 +292,8 @@ export class UseCaseService {
         'Using Angular CLI tooling for development, builds, and testing'
       ],
 
-      githubUrl: 'https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app'
+      githubUrl: 'https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app',
+      demoUrl: 'assets/Images/weatherapp.gif'
     }
   ];
 
