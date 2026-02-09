@@ -1,5 +1,6 @@
+import { NavigationService } from './../../../services/navigation.service';
 import { Component } from '@angular/core';
-import { ScrollService } from '../../../services/scroll.service';
+import {Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -15,14 +16,20 @@ import { ScrollService } from '../../../services/scroll.service';
  */
 export class FooterComponent {
 
-  constructor(public scrollService: ScrollService) { }
+  constructor(public navigationService: NavigationService, private router: Router) { }
 
-  /** * Scrolls smoothly to a section of the page by its HTML id.
-   * @param id The HTML id of the target section to scroll to.
+  /**
+   * Navigates to a section by its HTML id.
+   * First navigates to the home route, then scrolls to the target section.
+   * @param id The HTML id of the target section
    */
-  scrollTo(id: string): void {
-    this.scrollService.scrollTo(id);
-  }
+  goToSection(id: string): void {
+  this.router.navigate(['/']).then(() => {
+    setTimeout(() => {
+      this.navigationService.scrollTo(id);
+    }, 150);
+  });
+}
 
   /**
    * Returns the current year for display in the footer.
