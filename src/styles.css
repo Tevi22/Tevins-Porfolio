@@ -108,6 +108,10 @@ small,
     color: var(--text-muted);
 }
 
+.section-placeholder {
+    min-height: 300px;
+}
+
 
 /* Custom AOS Animations */
 
