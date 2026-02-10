@@ -124,11 +124,60 @@ ng generate component component-name
 ng generate service service-name
 ```
 
+## Accessibility, SEO & Performance Enhancements
+
+This portfolio was intentionally optimized for accessibility, search engine visibility, and reliability on static hosting, following modern front-end best practices and Lighthouse recommendations.
+
+-Accessibility Improvements (WCAG-Aligned)
+-Semantic HTML structure using proper landmarks (header, main, section, nav, footer)
+-Accessible navigation with keyboard support and logical tab order
+-Descriptive aria-labels added to interactive elements (buttons, links, icons)
+-Improved color contrast for text, buttons, and icons to meet WCAG AA guidelines
+-Screen reader–friendly headings and content hierarchy
+-Icon-only controls enhanced with accessible labels for assistive technologies
+*Result: Improved usability for keyboard users, screen readers, and assistive devices.*
+
+## SEO Enhancements
+
+-Optimized title and meta description for clear search engine indexing
+-Mobile-first viewport configuration
+-Clean, crawlable Angular routing using hash-based routing for GitHub Pages compatibility
+-Logical heading hierarchy (h1 → h2 → h3) for better content discoverability
+-Canonical URL configuration to prevent duplicate indexing
+*Result: Clear page intent, improved crawlability, and stronger search visibility.*
+
+## Performance & Architecture Decisions
+
+Removed route-level lazy loading to:
+-Improve reliability on static hosting (GitHub Pages)
+-Reduce routing complexity
+-Avoid chunk resolution issues in production builds
+-Optimized CSS and JavaScript delivery using Angular production builds
+-Minimized render-blocking resources and optimized font loading behavior
+*Result: Predictable rendering, faster initial load for a portfolio-scale application, and fewer production edge cases.*
+
+## Validation & Deployment
+
+-Tested across development and production builds
+-Verified deployment behavior directly on GitHub Pages
+-Audited using Google Lighthouse, achieving strong scores in:
+  -Performance
+  -Accessibility
+  -Best Practices
+  -SEO
+
+## Deployment Notes
+
+-Built using Angular standalone APIs
+-Deployed via GitHub Pages
+-Configured with baseHref and hash-based routing for static hosting compatibility
+-Production build validated against real hosting environment
+
 ## License
 
 This project is licensed under the MIT License.
 
-🙌 Contributions
+## Contributions
 
 While this is a personal portfolio, feedback and suggestions are welcome.
 Feel free to open an issue or start a discussion.
