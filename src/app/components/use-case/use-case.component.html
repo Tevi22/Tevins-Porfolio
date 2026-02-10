@@ -1,26 +1,26 @@
-<section class="use-case-container" *ngIf="useCase; else notFound">
+<section class="use-case-container" *ngIf="useCase; else notFound" role="main" aria-labelledby="use-case-title">
 
     <!-- Hero -->
-    <header class="use-case-hero">
-        <h1>{{ useCase.title }}</h1>
+    <header class="use-case-hero" role="banner">
+        <h1 id="use-case-title">{{ useCase.title }}</h1>
         <p class="subtitle">{{ useCase.description }}</p>
 
         <!-- Hero image -->
         <img *ngIf="useCase.imageUrl" [src]="useCase.imageUrl" [alt]="useCase.title + ' screenshot'" class="use-case-hero-image" />
 
-        <div class="use-case-actions">
-            <a *ngIf="useCase.githubUrl" [href]="useCase.githubUrl" target="_blank" class="project-btn">
+        <div class="use-case-actions" role="navigation" aria-label="Use case actions">
+            <a *ngIf="useCase.githubUrl" [href]="useCase.githubUrl" target="_blank" rel="noopener" class="project-btn" [attr.aria-label]="'View ' + useCase.title + ' source code on GitHub'">
         GitHub
       </a>
 
-            <a *ngIf="useCase.demoUrl" [href]="useCase.demoUrl" target="_blank" class="project-btn primary">
+            <a *ngIf="useCase.demoUrl" [href]="useCase.demoUrl" target="_blank" rel="noopener" class="project-btn primary" [attr.aria-label]="'View live demo of' + useCase.title ">
         Live Demo
       </a>
         </div>
     </header>
 
     <!-- Meta Row -->
-    <div class="meta-row">
+    <div class="meta-row" aria-label="Project metadata">
         <div class="meta-item">
             <span class="label">Role</span>
             <strong>{{ useCase.role }}</strong>
@@ -37,35 +37,35 @@
 
         <!-- Left -->
         <div>
-            <section>
-                <h3>The Challenge</h3>
+            <section role="region" aria-labelledby="challenge-heading">
+                <h3 id="challenge-heading">The Challenge</h3>
                 <p>{{ useCase.problem }}</p>
             </section>
 
-            <section>
-                <h3>Solution</h3>
+            <section role="region" aria-labelledby="solution-heading">
+                <h3 id="solution-heading">Solution</h3>
                 <p>{{ useCase.solution }}</p>
             </section>
 
-            <section>
-                <h3>Key Highlights</h3>
+            <section role="region" aria-labelledby="highlights-heading">
+                <h3 id="highlights-heading">Key Highlights</h3>
                 <ul class="checklist">
                     <li *ngFor="let feature of useCase.features.slice(0,3)">
-                        <i class="fa-solid fa-check checklist-icon"></i> {{ feature }}
+                        <i class="fa-solid fa-check checklist-icon" aria-hidden="true"></i> {{ feature }}
                     </li>
                 </ul>
             </section>
 
-            <section>
-                <h3>Overcoming Challenges</h3>
+            <section role="region" aria-labelledby="challenges-heading">
+                <h3 h3 id="challenges-heading">Overcoming Challenges</h3>
                 <p>{{ useCase.challenges }}</p>
             </section>
         </div>
 
         <!-- Right -->
         <div>
-            <section>
-                <h3>User Flow</h3>
+            <section role="region" aria-labelledby="flow-heading">
+                <h3 id="flow-heading">User Flow</h3>
                 <ul class="flow">
                     <li *ngFor="let step of useCase.userFlow">
                         {{ step }}
@@ -73,21 +73,21 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Features</h3>
+            <section role="region" aria-labelledby="features-heading">
+                <h3 id="features-heading">Features</h3>
                 <ul class="checklist">
                     <li *ngFor="let feature of useCase.features">
-                        <i class="fa-solid fa-check checklist-icon"></i> {{ feature }}
+                        <i class="fa-solid fa-check checklist-icon" aria-hidden="true"></i> {{ feature }}
                     </li>
                 </ul>
             </section>
 
             <!-- Learnings -->
-            <section>
-                <h3>What I Learned</h3>
+            <section role="region" aria-labelledby="learnings-heading">
+                <h3 id="learnings-heading">What I Learned</h3>
                 <ul class="checklist">
                     <li *ngFor="let learning of useCase.learnings">
-                        <i class="fa-solid fa-check checklist-icon"></i> {{ learning }}
+                        <i class="fa-solid fa-check checklist-icon" aria-hidden="true"></i> {{ learning }}
                     </li>
                 </ul>
             </section>
@@ -95,15 +95,16 @@
 
     </div>
 
-    <!-- Back -->
+    <!-- Back Navigation -->
     <div class="use-case-navigation">
-        <a [routerLink]="['/']" fragment="projects">
+        <a [routerLink]="['/']" fragment="projects" aria-label="Return to projects section">
       ← Back to Projects
     </a>
     </div>
 
 </section>
 
+<!--Not found-->
 <ng-template #notFound>
-    <h2 class="not-found">Use case not found.</h2>
+    <h2 class="not-found" role="alert">Use case not found.</h2>
 </ng-template>

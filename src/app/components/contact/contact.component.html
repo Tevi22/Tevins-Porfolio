@@ -1,5 +1,5 @@
-<section class="contact" id="contact">
-    <h2 class="contact-title">Contact Me</h2>
+<section class="contact" id="contact" role="region" aria-labelledby="contact-heading">
+    <h2 class="contact-title" id="contact-heading">Contact Me</h2>
 
     <div class="contact-container">
 
@@ -11,26 +11,28 @@
         </div>
 
         <!-- DIVIDER -->
-        <div class="contact-divider"></div>
+        <div class="contact-divider" aria-hidden="true"></div>
 
         <!-- RIGHT -->
         <div class="contact-details">
 
-            <div class="contact-item">
-                <h4>Email</h4>
+            <!--Email-->
+            <article class="contact-item">
+                <h4 id="contact-email-heading">Email</h4>
                 <p>tevindavis&#64;icloud.com</p>
-                <a href="mailto:tevindavis@icloud.com" class="contact-btn">
+                <a href="mailto:tevindavis@icloud.com" class="contact-btn" aria-label="Send an email to Tevin Davis">
           Send Message
         </a>
-            </div>
+            </article>
 
-            <div class="contact-item">
-                <h4>LinkedIn</h4>
+            <!--LinkedIn-->
+            <article class="contact-item" aria-labelledby="contact-linkedin-heading">
+                <h4 id="contact-linkedin-heading">LinkedIn</h4>
                 <p>&#64;tevindavis</p>
-                <a href="https://www.linkedin.com/in/tevindavis/" target="_blank" class="contact-btn">
+                <a href="https://www.linkedin.com/in/tevindavis/" target="_blank" class="contact-btn" aria-label="Open Tevin Davis LinkedIn profile in a new tab">
           Connect
         </a>
-            </div>
+            </article>
 
         </div>
     </div>

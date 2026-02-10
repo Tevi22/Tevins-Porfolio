@@ -1,26 +1,26 @@
-<section class="hero" id="home">
+<section class="hero" id="home" role="banner" aria-labelledby="hero-heading">
     <div class="hero-container">
         <!-- LEFT COLUMN -->
         <div class="hero-content">
-            <h1>
+            <h1 id="hero-heading">
                 Hi, I’m <span class="name">Tevin Davis</span> —
                 <br /> Front-End Developer <br /> & UI Craftsman
             </h1>
 
-            <p class="subtitle">
+            <p class="subtitle" id="hero-description">
                 I build interfaces that feel good to use — clean, intuitive, and full of personality.
             </p>
 
-            <div class="hero-actions">
-                <a [routerLink]="['/']" fragment="contact" class="btn primary">Let’s Work Together</a>
-                <a [routerLink]="['/']" fragment="projects" class="btn secondary">View My Work</a>
+            <div class="hero-actions" role="navigation" aria-label="Primary call to action">
+                <a [routerLink]="['/']" fragment="contact" class="btn primary" aria-label="Navigate to contact section">Let’s Work Together</a>
+                <a [routerLink]="['/']" fragment="projects" class="btn secondary" aria-label="Navigate to project section">View My Work</a>
             </div>
         </div>
 
         <!-- RIGHT COLUMN -->
         <div class="hero-visual">
             <div class="gradient-blob">
-                <img src="./assets/Images/logo-Tevin.png" alt="Tevin Davis" />
+                <img src="./assets/Images/logo-Tevin.png" alt="Tevin Davis personal logo" aria-hidden="true" class="hero-image" fetchpriority="high" loading="eager" />
             </div>
         </div>
     </div>

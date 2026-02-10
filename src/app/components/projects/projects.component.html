@@ -1,14 +1,14 @@
-<section class="projects" id="projects">
-    <h2 class="projects-title">Projects</h2>
+<section class="projects" id="projects" role="region" aria-labelledby="projects-heading">
+    <h2 class="projects-title" id="projects-heading">Projects</h2>
 
     <div class="projects-grid">
 
         <!-- Flight Booking App -->
-        <div class="project-card">
+        <article class="project-card" aria-labelledby="flight-booking-title">
             <div class="project-media">
-                <img src="assets/Images/flight_booking_app.png" alt="Flight Booking Web Application" class="project-image" />
+                <img src="assets/Images/flight_booking_app.png" alt="Screenshot of the Flight Booking Web Application" class="project-image" />
             </div>
-            <h3>Flight Booking Web Application</h3>
+            <h3 id="flight-booking-title">Flight Booking Web Application</h3>
             <p>
                 Full-stack web application for searching and booking flights with RESTful APIs, server-side logic, and database persistence.
             </p>
@@ -22,18 +22,18 @@
                 <span>#Responsive Design</span>
             </div>
             <div class="project-links">
-                <a href="https://github.com/Tevi22/flight-booking-app" target="_blank">GitHub</a>
-                <a [routerLink]="['/use-case', 'flight-booking']">Use Case</a>
-                <a href="./assets/Images/flightbookingapp.gif" target="_blank">Demo</a>
+                <a href="https://github.com/Tevi22/flight-booking-app" target="_blank" rel="noopener" aria-label="View Flight Booking Web Application source code on GitHub">GitHub</a>
+                <a [routerLink]="['/use-case', 'flight-booking']" aria-label="View Flight Booking Web Application use case">Use Case</a>
+                <a href="./assets/Images/flightbookingapp.gif" target="_blank" aria-label="View Flight Booking Web Application demo">Demo</a>
             </div>
-        </div>
+        </article>
 
         <!-- Auth Service -->
-        <div class="project-card">
+        <article class="project-card" aria-labelledby="auth-service-title">
             <div class="project-media">
-                <img src="assets/Images/authservice.png" alt="Authentication & Registration Service" class="project-image" />
+                <img src="assets/Images/authservice.png" alt="Authentication & Registration Service" alt="Screenshot of the Authentication and Registration Service" class="project-image" />
             </div>
-            <h3>Authentication & Registration Service</h3>
+            <h3 id="auth-service-title">Authentication & Registration Service</h3>
             <p>
                 RESTful authentication service supporting user login and registration with credential validation and XML-based data storage.
             </p>
@@ -47,18 +47,18 @@
                 <span>#JUnit</span>
             </div>
             <div class="project-links">
-                <a href="https://github.com/Tevi22/authservice" target="_blank">GitHub</a>
-                <a [routerLink]="['/use-case', 'auth-service']">Use Case</a>
-                <a href="./assets/Images/authservice.gif" target="_blank">Demo</a>
+                <a href="https://github.com/Tevi22/authservice" target="_blank" rel="noopener" aria-label="View Authentication Service source code on GitHub">GitHub</a>
+                <a [routerLink]="['/use-case', 'auth-service']" aria-label="View Authentication Service use case">Use Case</a>
+                <a href="./assets/Images/authservice.gif" target="_blank" aria-label="View Authentication Service demo">Demo</a>
             </div>
-        </div>
+        </article>
 
         <!-- Ace Restaurant App -->
-        <div class="project-card">
+        <article class="project-card" aria-labelledby="ace-restaurant-title">
             <div class="project-media">
-                <img src="assets/Images/ace_restuarant_app.png" alt="Ace Restaurant Ordering App" class="project-image" />
+                <img src="assets/Images/ace_restuarant_app.png" alt="Screenshot of the Ace Restaurant Ordering App" class="project-image" />
             </div>
-            <h3>Ace Restaurant Ordering App</h3>
+            <h3 id="ace-restaurant-title">Ace Restaurant Ordering App</h3>
             <p>
                 Android application for restaurant ordering with interactive UI, pricing logic, and clean separation of UI and business logic.
             </p>
@@ -71,18 +71,18 @@
                 <span>#Material Design</span>
             </div>
             <div class="project-links">
-                <a href="https://github.com/Tevi22/AceRestaurant-" target="_blank">GitHub</a>
-                <a [routerLink]="['/use-case', 'ace-restaurant']">Use Case</a>
-                <a href="./assets/Demo/ace_restuarant_demo.mp4" target="_blank">Demo</a>
+                <a href="https://github.com/Tevi22/AceRestaurant-" target="_blank" rel="noopener" aria-label="View Ace Restaurant Ordering App source code on GitHub">GitHub</a>
+                <a [routerLink]="['/use-case', 'ace-restaurant']" aria-label="View Ace Restaurant Ordering App use case">Use Case</a>
+                <a href="./assets/Demo/ace_restuarant_demo.mp4" target="_blank" aria-label="View Ace Restaurant Ordering App demo">Demo</a>
             </div>
-        </div>
+        </article>
 
         <!-- Portfolio -->
-        <div class="project-card">
+        <article class="project-card" aria-labelledby="portfolio-title">
             <div class="project-media">
-                <img src="assets/Images/portfolio.png" alt="Developer Portfolio Website" class="project-image" />
+                <img src="assets/Images/portfolio.png" alt="Screenshot of the developer portfolio website" class="project-image" />
             </div>
-            <h3>Developer Portfolio Website</h3>
+            <h3 id="portfolio-title">Developer Portfolio Website</h3>
             <p>
                 Single-page Angular application designed to showcase projects, skills, and experience with a modern, responsive layout.
             </p>
@@ -94,18 +94,18 @@
                 <span>#Responsive Design</span>
             </div>
             <div class="project-links">
-                <a href="https://github.com/Tevi22/Tevins-Portfolio" target="_blank">GitHub</a>
-                <a [routerLink]="['/use-case', 'portfolio']">Use Case</a>
-                <a href="https://tevi22.github.io/Tevins-Portfolio/" target="_blank">Live</a>
+                <a href="https://github.com/Tevi22/Tevins-Portfolio" target="_blank" rel="noopener" aria-label="View portfolio website source code on GitHub">GitHub</a>
+                <a [routerLink]="['/use-case', 'portfolio']" aria-label="View portfolio website use case">Use Case</a>
+                <a href="https://tevi22.github.io/Tevins-Portfolio/" target="_blank" aria-label="Open live portfolio website">Live</a>
             </div>
-        </div>
+        </article>
 
         <!-- Weather App -->
-        <div class="project-card">
+        <article class="project-card" aria-labelledby="weather app-title">
             <div class="project-media">
-                <img src="assets/Images/weather-app.png" alt="Weather App" class="project-image" />
+                <img src="assets/Images/weather-app.png" alt="Screenshot of the weather app" class="project-image" />
             </div>
-            <h3>Weather App</h3>
+            <h3 id="weather app-title">Weather App</h3>
             <p>
                 A lightweight Angular single-page application that consumes a public weather API and presents current conditions and forecasts in a clear, readable, and responsive interface.
             </p>
@@ -118,14 +118,13 @@
                 <span>#Public Weather API</span>
                 <span>#Angular CLI</span>
 
-
             </div>
             <div class="project-links">
-                <a href="https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app" target="_blank">GitHub</a>
-                <a [routerLink]="['/use-case', 'weather-app']">Use Case</a>
-                <a href="./assets/Images/weatherapp.gif" target="_blank">Demo</a>
+                <a href="https://github.com/Tevi22/Tevin/tree/master/Angular_Workspace/weather-app" target="_blank" rel="noopener" aria-label="View weather app source code on GitHub">GitHub</a>
+                <a [routerLink]="['/use-case', 'weather-app']" aria-label="View Weather App use case">Use Case</a>
+                <a href="./assets/Images/weatherapp.gif" target="_blank" aria-label="View Weather App demo">Demo</a>
             </div>
-        </div>
+        </article>
 
     </div>
 </section>

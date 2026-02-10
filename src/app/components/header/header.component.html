@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, #9d4bc7, #7751cc);">
+<nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Primary site navigation" style="background: linear-gradient(90deg, #9d4bc7, #7751cc);">
 
     <div class="container-fluid">
 
@@ -15,37 +15,37 @@
         <!-- Nav links (RIGHT) -->
         <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
 
-            <ul class="navbar-nav align-items-center gap-lg-3">
+            <ul class="navbar-nav align-items-center gap-lg-3" role="menubar">
 
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('home')">Home</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('home')" aria-label="Navigate to home section">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('about')">About</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('about')" aria-label="Navigate to about section">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('journey')">Experience</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('journey')" aria-label="Navigate to experience section">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('skills')">Skills</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('skills')" aria-label="Navigate to skill section">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('projects')">Projects</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('projects')" aria-label="Navigate to project section">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3 text-white" (click)="goToSection('contact')">Contact</a>
+                    <a class="nav-link px-3 text-white" (click)="goToSection('contact')" aria-label="Navigate to contact section">Contact</a>
                 </li>
 
                 <!--Resume-->
                 <li class="nav-item">
-                    <a href="./assets/Documents/Tevin_Davis_Resume_Software_Developer.pdf" target="_blank" class="text-white text-decoration-underline">
+                    <a href="./assets/Documents/Tevin_Davis_Resume_Software_Developer.pdf" target="_blank" rel="noopener" class="text-white text-decoration-underline" aria-label="Open resume PDF in a new tab">
             Resume
           </a>
                 </li>
 
                 <!-- Theme toggle -->
                 <li class="nav-item ms-lg-3">
-                    <button class="btn btn-outline-light btn-sm" (click)="toggleTheme()">
+                    <button class="btn btn-outline-light btn-sm" (click)="toggleTheme()" [attr.aria-pressed]="isDark" aria-label="Toggle dark mode">>
             {{ isDark ? 'Light Mode' : 'Dark Mode' }}
           </button>
                 </li>
