@@ -40,13 +40,15 @@
                         ],
                         "scripts": [
                             "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-                            "node_modules/jquery/dist/jquery.min.js",
                             "./src/assets/script/themeToggle.js"
                         ]
                     },
                     "configurations": {
                         "production": {
                             "baseHref": "/Tevins-Portfolio/",
+                            "optimization": {
+                                "fonts": false
+                            },
                             "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "900kb",
