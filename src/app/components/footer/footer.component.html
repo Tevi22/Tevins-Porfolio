@@ -11,22 +11,23 @@
         <!--Footer Navigation Links -->
         <ul class="nav justify-content-center mb-4" aria-label="Footer navigation">
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('home')" aria-label="Navigate to home section">Home</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('home')" aria-label="Navigate to home section">Home</a></button>
+
             </li>
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('about')" aria-label="Navigate to about section">About</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('about')" aria-label="Navigate to about section">About</a></button>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('journey')" aria-label="Navigate to experience section">Experience</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('journey')" aria-label="Navigate to experience section">Experience</a></button>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('skills')" aria-label="Navigate to skill section">Skills</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('skills')" aria-label="Navigate to skill section">Skills</a></button>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('projects')" aria-label="Navigate to project section">Projects</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('projects')" aria-label="Navigate to project section">Projects</a></button>
             </li>
             <li class="nav-item">
-                <a class="nav-link px-3 text-white" (click)="goToSection('contact')" aria-label="Navigate to contact section">Contact</a>
+                <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('contact')" aria-label="Navigate to contact section">Contact</a></button>
             </li>
 
         </ul>
@@ -51,7 +52,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="text-center small opacity-75">
+        <div class="text-center small opacity-75" id="copyright">
             © Tevin Davis. All rights reserved {{ date }}
         </div>
 

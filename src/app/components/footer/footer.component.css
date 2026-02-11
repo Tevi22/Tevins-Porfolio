@@ -11,10 +11,22 @@
     opacity: 1;
 }
 
+#navlink {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
 .footer svg {
     transition: transform 0.2s ease;
 }
 
 .footer svg:hover {
     transform: translateY(-2px);
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.75);
 }
