@@ -50,6 +50,9 @@ main {
     /* labels */
 }
 
+
+/* Dark Theme Project Specific Styles */
+
 body.dark-theme .project-card {
     background: #0f1115;
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -65,7 +68,8 @@ body.dark-theme .project-card p {
 }
 
 body.dark-theme .project-links a {
-    color: var(--color-primary);
+    color: var(--text-primary) !important;
+    background: var(--color-primary-linear);
     border: 1px solid var(--color-primary);
 }
 
@@ -79,6 +83,9 @@ body.dark-theme .project-links a {
     /* labels */
 }
 
+
+/* Light Theme Project Specific Styles */
+
 .light-theme .project-links a {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -86,6 +93,15 @@ body.dark-theme .project-links a {
 
 body.light-theme .use-case-actions a {
     color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+
+/* Dark Theme Contact Specific Styles */
+
+body.dark-theme .contact-item a {
+    color: var(--text-primary) !important;
+    background: var(--color-primary-linear);
     border: 1px solid var(--color-primary);
 }
 
