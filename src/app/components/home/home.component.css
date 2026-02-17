@@ -71,7 +71,8 @@
 
 .btn.secondary:hover {
     transform: translateY(-2px);
-    background: rgba(138, 78, 202, 0.06);
+    color: white;
+    background: var(--color-primary-linear);
     box-shadow: 0 10px 24px rgba(138, 78, 202, 0.18);
 }
 

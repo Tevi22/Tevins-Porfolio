@@ -17,35 +17,35 @@
 
             <ul class="navbar-nav align-items-center gap-lg-3" role="menubar">
 
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('home')" aria-label="Navigate to home section">Home</a></button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('about')" aria-label="Navigate to about section">About</a></button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('journey')" aria-label="Navigate to experience section">Experience</a></button>
 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('skills')" aria-label="Navigate to skill section">Skills</a></button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('projects')" aria-label="Navigate to project section">Projects</a></button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <button id="navlink"><a class="nav-link px-3 text-white" (click)="goToSection('contact')" aria-label="Navigate to contact section">Contact</a></button>
                 </li>
 
                 <!--Resume-->
-                <li class="nav-item">
+                <li class="nav-item" role="menuitem">
                     <a href="./assets/Documents/Tevin_Davis_Resume_Software_Developer.pdf" target="_blank" rel="noopener" class="text-white text-decoration-underline" aria-label="Open resume PDF in a new tab">
             Resume
           </a>
                 </li>
 
                 <!-- Theme toggle -->
-                <li class="nav-item ms-lg-3">
+                <li class="nav-item ms-lg-3" role="menuitem">
                     <button class="btn btn-outline-light btn-sm" (click)="toggleTheme()" [attr.aria-pressed]="isDark" aria-label="Toggle dark mode">
             {{ isDark ? 'Light Mode' : 'Dark Mode' }}
           </button>
